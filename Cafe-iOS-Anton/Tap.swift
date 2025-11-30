@@ -2,7 +2,7 @@
 //  Tap.swift
 //  Cafe-iOS-Anton
 //
-//  Created by Шаген  Арабачян on 29.11.2025.
+//  Created by Антон Абалуев on 29.11.2025.
 //
 
 import UIKit

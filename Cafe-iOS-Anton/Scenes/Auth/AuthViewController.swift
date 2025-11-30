@@ -2,7 +2,7 @@
 //  AuthViewController.swift
 //  Cafe-ios
 //
-//  Created by Шаген  Арабачян on 29.11.2025.
+//  Created by Антон Абалуев on 29.11.2025.
 //
 
 import UIKit
@@ -22,8 +22,8 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     private let registrButton = UIButton(type: .system)
     private let passwordToggleButton = UIButton(type: .custom)
     
-    // var interactor: AuthInteractorProtocol?
-    // var router: AuthRouterProtocol?
+    var interactor: AuthInteractorProtocol?
+    var router: AuthRouterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         
         logoImageView.tap {
             view.addSubview($0)
-            //  $0.image = Shark.I.antonImageCafe
+            $0.image = Shark.I.logoImage
             $0.contentMode = .scaleAspectFit
             $0.snp.makeConstraints {
                 $0.centerX.equalToSuperview()
