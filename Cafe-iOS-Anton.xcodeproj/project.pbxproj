@@ -8,32 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		3A1A75FB2EDAF0EA0011F378 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1A75FA2EDAF0EA0011F378 /* SnapKit */; };
+		693ABD892EE1DFAA00DEBBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABD792EE1DB9600DEBBEE /* AppDelegate.swift */; };
+		693ABD8A2EE1DFAF00DEBBEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABD7A2EE1DB9A00DEBBEE /* SceneDelegate.swift */; };
+		693ABD8B2EE1DFB900DEBBEE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABD822EE1DC5A00DEBBEE /* AuthViewController.swift */; };
+		693ABD8C2EE1DFBC00DEBBEE /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABD7F2EE1DC5A00DEBBEE /* AuthInteractor.swift */; };
+		693ABD8D2EE1DFC100DEBBEE /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABD802EE1DC5A00DEBBEE /* AuthPresenter.swift */; };
+		693ABD8E2EE1DFC500DEBBEE /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABD812EE1DC5A00DEBBEE /* AuthRouter.swift */; };
+		693ABD902EE1DFCD00DEBBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 693ABD862EE1DDA700DEBBEE /* Assets.xcassets */; };
+		693ABD912EE1DFD100DEBBEE /* Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABD842EE1DCEB00DEBBEE /* Tap.swift */; };
+		693ABD922EE1DFD500DEBBEE /* Shark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABD852EE1DD2A00DEBBEE /* Shark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A1A75E12EDAF0590011F378 /* Cafe-iOS-Anton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cafe-iOS-Anton.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		693ABD792EE1DB9600DEBBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		693ABD7A2EE1DB9A00DEBBEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		693ABD7F2EE1DC5A00DEBBEE /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		693ABD802EE1DC5A00DEBBEE /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		693ABD812EE1DC5A00DEBBEE /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		693ABD822EE1DC5A00DEBBEE /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		693ABD832EE1DCDF00DEBBEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		693ABD842EE1DCEB00DEBBEE /* Tap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tap.swift; sourceTree = "<group>"; };
+		693ABD852EE1DD2A00DEBBEE /* Shark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shark.swift; sourceTree = "<group>"; };
+		693ABD862EE1DDA700DEBBEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3A1A75F32EDAF05B0011F378 /* Exceptions for "Cafe-iOS-Anton" folder in "Cafe-iOS-Anton" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 3A1A75E02EDAF0590011F378 /* Cafe-iOS-Anton */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		3A1A75E32EDAF0590011F378 /* Cafe-iOS-Anton */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3A1A75F32EDAF05B0011F378 /* Exceptions for "Cafe-iOS-Anton" folder in "Cafe-iOS-Anton" target */,
-			);
-			path = "Cafe-iOS-Anton";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3A1A75DE2EDAF0590011F378 /* Frameworks */ = {
@@ -50,7 +48,7 @@
 		3A1A75D82EDAF0590011F378 = {
 			isa = PBXGroup;
 			children = (
-				693ABD172EE1D42200DEBBEE /* New Group */,
+				693ABD782EE1DB7C00DEBBEE /* Cafe-IOS-Anton */,
 				3A1A75E22EDAF0590011F378 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,12 +61,69 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		693ABD172EE1D42200DEBBEE /* New Group */ = {
+		693ABD782EE1DB7C00DEBBEE /* Cafe-IOS-Anton */ = {
 			isa = PBXGroup;
 			children = (
-				3A1A75E32EDAF0590011F378 /* Cafe-iOS-Anton */,
+				693ABD792EE1DB9600DEBBEE /* AppDelegate.swift */,
+				693ABD7A2EE1DB9A00DEBBEE /* SceneDelegate.swift */,
+				693ABD7B2EE1DBFF00DEBBEE /* Models */,
+				693ABD7C2EE1DC2000DEBBEE /* Scenes */,
+				693ABD832EE1DCDF00DEBBEE /* Info.plist */,
+				693ABD862EE1DDA700DEBBEE /* Assets.xcassets */,
+				693ABD842EE1DCEB00DEBBEE /* Tap.swift */,
+				693ABD852EE1DD2A00DEBBEE /* Shark.swift */,
+				693ABD882EE1DDC300DEBBEE /* Common */,
+				693ABD872EE1DDBA00DEBBEE /* Network */,
 			);
-			path = "New Group";
+			path = "Cafe-IOS-Anton";
+			sourceTree = "<group>";
+		};
+		693ABD7B2EE1DBFF00DEBBEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		693ABD7C2EE1DC2000DEBBEE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				693ABD7D2EE1DC3200DEBBEE /* ForgotPassword */,
+				693ABD7E2EE1DC4100DEBBEE /* Registration */,
+				693ABD822EE1DC5A00DEBBEE /* AuthViewController.swift */,
+				693ABD7F2EE1DC5A00DEBBEE /* AuthInteractor.swift */,
+				693ABD802EE1DC5A00DEBBEE /* AuthPresenter.swift */,
+				693ABD812EE1DC5A00DEBBEE /* AuthRouter.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		693ABD7D2EE1DC3200DEBBEE /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		693ABD7E2EE1DC4100DEBBEE /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		693ABD872EE1DDBA00DEBBEE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		693ABD882EE1DDC300DEBBEE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +140,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				3A1A75E32EDAF0590011F378 /* Cafe-iOS-Anton */,
 			);
 			name = "Cafe-iOS-Anton";
 			packageProductDependencies = (
@@ -139,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693ABD902EE1DFCD00DEBBEE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693ABD8D2EE1DFC100DEBBEE /* AuthPresenter.swift in Sources */,
+				693ABD8C2EE1DFBC00DEBBEE /* AuthInteractor.swift in Sources */,
+				693ABD892EE1DFAA00DEBBEE /* AppDelegate.swift in Sources */,
+				693ABD8B2EE1DFB900DEBBEE /* AuthViewController.swift in Sources */,
+				693ABD8E2EE1DFC500DEBBEE /* AuthRouter.swift in Sources */,
+				693ABD8A2EE1DFAF00DEBBEE /* SceneDelegate.swift in Sources */,
+				693ABD912EE1DFD100DEBBEE /* Tap.swift in Sources */,
+				693ABD922EE1DFD500DEBBEE /* Shark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +223,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6634PV48FZ;
+				DEVELOPMENT_TEAM = TU49UKVVFH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cafe-iOS-Anton/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -190,7 +251,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6634PV48FZ;
+				DEVELOPMENT_TEAM = TU49UKVVFH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cafe-iOS-Anton/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
