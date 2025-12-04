@@ -50,7 +50,7 @@
 		3A1A75D82EDAF0590011F378 = {
 			isa = PBXGroup;
 			children = (
-				3A1A75E32EDAF0590011F378 /* Cafe-iOS-Anton */,
+				693ABD172EE1D42200DEBBEE /* New Group */,
 				3A1A75E22EDAF0590011F378 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +61,14 @@
 				3A1A75E12EDAF0590011F378 /* Cafe-iOS-Anton.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		693ABD172EE1D42200DEBBEE /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				3A1A75E32EDAF0590011F378 /* Cafe-iOS-Anton */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
