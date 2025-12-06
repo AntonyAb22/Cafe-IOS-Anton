@@ -27,7 +27,7 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        router = AuthRouter(viewController: self)
         setupUI()
         setupKeyboardObservers()
     }

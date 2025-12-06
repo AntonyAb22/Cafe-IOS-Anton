@@ -5,3 +5,12 @@
 //  Created by Антон Абалуев on 06.12.2025.
 //
 
+import UIKit
+
+protocol ForgotInteractorProtocol {
+    
+}
+
+class ForgotInteractor: ForgotInteractorProtocol {
+    let service = AuthService()
+}
