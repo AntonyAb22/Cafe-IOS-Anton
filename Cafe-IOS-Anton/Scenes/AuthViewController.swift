@@ -238,7 +238,7 @@ extension AuthViewController {
     }
     
     @objc private func forgotPasswordButtonTapped(){
-        //  router?.navigateToForgotPassword()
+        router?.navigateToForgotPassword()
     }
     
     @objc func loginButtonTapped() {
