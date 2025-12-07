@@ -36,6 +36,7 @@
 		693ABDBE2EE41D0000DEBBEE /* ForgotInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDBD2EE41CF200DEBBEE /* ForgotInteractor.swift */; };
 		693ABDC02EE41D0700DEBBEE /* ForgotPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDBF2EE41D0300DEBBEE /* ForgotPresenter.swift */; };
 		693ABDC22EE41D0D00DEBBEE /* ForgotRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDC12EE41D0A00DEBBEE /* ForgotRouter.swift */; };
+		693ABDC42EE5838000DEBBEE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDC32EE5837800DEBBEE /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		693ABDBD2EE41CF200DEBBEE /* ForgotInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotInteractor.swift; sourceTree = "<group>"; };
 		693ABDBF2EE41D0300DEBBEE /* ForgotPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPresenter.swift; sourceTree = "<group>"; };
 		693ABDC12EE41D0A00DEBBEE /* ForgotRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotRouter.swift; sourceTree = "<group>"; };
+		693ABDC32EE5837800DEBBEE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		693ABD882EE1DDC300DEBBEE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				693ABDC32EE5837800DEBBEE /* UIColor.swift */,
 				693ABDB12EE4156100DEBBEE /* TableViewItem.swift */,
 				693ABDAF2EE4155400DEBBEE /* TableViewModel.swift */,
 				693ABDAD2EE4142B00DEBBEE /* TableViewCell.swift */,
@@ -314,6 +317,7 @@
 				693ABDC22EE41D0D00DEBBEE /* ForgotRouter.swift in Sources */,
 				693ABDAA2EE410D800DEBBEE /* TableView.swift in Sources */,
 				693ABD8A2EE1DFAF00DEBBEE /* SceneDelegate.swift in Sources */,
+				693ABDC42EE5838000DEBBEE /* UIColor.swift in Sources */,
 				693ABD9A2EE40FE700DEBBEE /* ProfileViewController.swift in Sources */,
 				693ABDBE2EE41D0000DEBBEE /* ForgotInteractor.swift in Sources */,
 				693ABD912EE1DFD100DEBBEE /* Tap.swift in Sources */,
