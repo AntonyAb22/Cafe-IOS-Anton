@@ -247,7 +247,7 @@ extension AuthViewController {
     }
     
     @objc private func registrButtonTapped(){
-        // router?.navigateToRegistration()
+        router?.navigateToRegistration()
     }
     
     // Функция для переключения видимости пароля

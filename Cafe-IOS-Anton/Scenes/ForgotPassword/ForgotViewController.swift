@@ -23,7 +23,7 @@ class ForgotViewController: UIViewController {
     private let passwordRecoveryButton = UIButton(type: .system)
     private let attentionMessageLabel2 = UILabel()
     private let attentionMessageLabel = UILabel()
-    private let backButton = UIButton(type: .custom)
+    private let backButton = UIButton(type: .system)
 
     override func viewDidLoad() {
         super.viewDidLoad()

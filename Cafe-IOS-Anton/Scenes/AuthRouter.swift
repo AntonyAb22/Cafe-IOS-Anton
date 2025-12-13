@@ -38,7 +38,15 @@ class AuthRouter: AuthRouterProtocol {
     
     // переход на экран Регистрации
     func navigateToRegistration() {
+        let registrationVC = RegistrationViewController()
         
+        if let navController = viewController?.navigationController {
+            navController.pushViewController(registrationVC, animated: true)
+        } else {
+            let newNavController = UINavigationController(rootViewController: registrationVC)
+            newNavController.modalPresentationStyle = .fullScreen
+            viewController?.present(newNavController, animated: true)
+        }
     }
 }
 

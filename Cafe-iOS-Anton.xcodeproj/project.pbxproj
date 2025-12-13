@@ -37,6 +37,12 @@
 		693ABDC02EE41D0700DEBBEE /* ForgotPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDBF2EE41D0300DEBBEE /* ForgotPresenter.swift */; };
 		693ABDC22EE41D0D00DEBBEE /* ForgotRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDC12EE41D0A00DEBBEE /* ForgotRouter.swift */; };
 		693ABDC42EE5838000DEBBEE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDC32EE5837800DEBBEE /* UIColor.swift */; };
+		693ABDD02EED4B8000DEBBEE /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDCE2EED4B8000DEBBEE /* RegistrationPresenter.swift */; };
+		693ABDD12EED4B8000DEBBEE /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDCC2EED4B8000DEBBEE /* RegistrationViewController.swift */; };
+		693ABDD22EED4B8000DEBBEE /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDCD2EED4B8000DEBBEE /* RegistrationInteractor.swift */; };
+		693ABDD32EED4B8000DEBBEE /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDCF2EED4B8000DEBBEE /* RegistrationRouter.swift */; };
+		693ABDD52EED5D8900DEBBEE /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDD42EED5D7C00DEBBEE /* RootRouter.swift */; };
+		693ABDD72EED5E0D00DEBBEE /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDD62EED5DF800DEBBEE /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +77,12 @@
 		693ABDBF2EE41D0300DEBBEE /* ForgotPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPresenter.swift; sourceTree = "<group>"; };
 		693ABDC12EE41D0A00DEBBEE /* ForgotRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotRouter.swift; sourceTree = "<group>"; };
 		693ABDC32EE5837800DEBBEE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		693ABDCC2EED4B8000DEBBEE /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		693ABDCD2EED4B8000DEBBEE /* RegistrationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
+		693ABDCE2EED4B8000DEBBEE /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		693ABDCF2EED4B8000DEBBEE /* RegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		693ABDD42EED5D7C00DEBBEE /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		693ABDD62EED5DF800DEBBEE /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,8 @@
 		693ABD782EE1DB7C00DEBBEE /* Cafe-IOS-Anton */ = {
 			isa = PBXGroup;
 			children = (
+				693ABDD62EED5DF800DEBBEE /* CustomTabBarController.swift */,
+				693ABDD42EED5D7C00DEBBEE /* RootRouter.swift */,
 				693ABD792EE1DB9600DEBBEE /* AppDelegate.swift */,
 				693ABD7A2EE1DB9A00DEBBEE /* SceneDelegate.swift */,
 				693ABD7B2EE1DBFF00DEBBEE /* Models */,
@@ -153,6 +167,10 @@
 		693ABD7E2EE1DC4100DEBBEE /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				693ABDCC2EED4B8000DEBBEE /* RegistrationViewController.swift */,
+				693ABDCD2EED4B8000DEBBEE /* RegistrationInteractor.swift */,
+				693ABDCE2EED4B8000DEBBEE /* RegistrationPresenter.swift */,
+				693ABDCF2EED4B8000DEBBEE /* RegistrationRouter.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -300,13 +318,19 @@
 				693ABDAC2EE413C200DEBBEE /* TablePresenter.swift in Sources */,
 				693ABD9E2EE4101900DEBBEE /* ProfilePresenter.swift in Sources */,
 				693ABD8D2EE1DFC100DEBBEE /* AuthPresenter.swift in Sources */,
+				693ABDD72EED5E0D00DEBBEE /* CustomTabBarController.swift in Sources */,
 				693ABDC02EE41D0700DEBBEE /* ForgotPresenter.swift in Sources */,
+				693ABDD02EED4B8000DEBBEE /* RegistrationPresenter.swift in Sources */,
+				693ABDD12EED4B8000DEBBEE /* RegistrationViewController.swift in Sources */,
+				693ABDD22EED4B8000DEBBEE /* RegistrationInteractor.swift in Sources */,
+				693ABDD32EED4B8000DEBBEE /* RegistrationRouter.swift in Sources */,
 				693ABDB22EE4156600DEBBEE /* TableViewItem.swift in Sources */,
 				693ABDB92EE418FE00DEBBEE /* AuthService.swift in Sources */,
 				693ABDAE2EE4143000DEBBEE /* TableViewCell.swift in Sources */,
 				693ABDA52EE4104D00DEBBEE /* MainInteractor.swift in Sources */,
 				693ABDA62EE4104D00DEBBEE /* MainRouter.swift in Sources */,
 				693ABDA72EE4104D00DEBBEE /* MainViewController.swift in Sources */,
+				693ABDD52EED5D8900DEBBEE /* RootRouter.swift in Sources */,
 				693ABDA82EE4104D00DEBBEE /* MainPresenter.swift in Sources */,
 				693ABD8C2EE1DFBC00DEBBEE /* AuthInteractor.swift in Sources */,
 				693ABD9C2EE4100F00DEBBEE /* ProfileInteractor.swift in Sources */,
