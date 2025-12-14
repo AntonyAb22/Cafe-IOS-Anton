@@ -13,5 +13,11 @@ protocol ProfileInteractorProtocol {
 }
 
 class ProfileInteractor: ProfileInteractorProtocol {
+    var presenter: ProfilePresenterProtocol
+    var router: ProfileRouterProtocol
     
+    init(presenter: ProfilePresenterProtocol, router: ProfileRouterProtocol) {
+        self.presenter = presenter
+        self.router = router
+    }
 }

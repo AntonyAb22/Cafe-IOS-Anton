@@ -13,5 +13,9 @@ protocol ProfilePresenterProtocol {
 }
 
 class ProfilePresenter: TablePresenter, ProfilePresenterProtocol {
+    var viewController: ProfileViewControllerProtocol
     
+    init(viewController: ProfileViewControllerProtocol) {
+        self.viewController = viewController
+    }
 }

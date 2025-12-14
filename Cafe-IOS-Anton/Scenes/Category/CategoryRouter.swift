@@ -1,5 +1,5 @@
 //
-//  MainRouter.swift
+//  CategoryRouter.swift
 //  Cafe-iOS-Anton
 //
 //  Created by Антон Абалуев on 06.12.2025.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol MainRouterProtocol {
+protocol CategoryRouterProtocol {
     var rootViewController: UINavigationController { get set }
 }
 
-class MainRouter: MainRouterProtocol {
+class CategoryRouter: CategoryRouterProtocol {
     var rootViewController: UINavigationController
     
     init(rootViewController: UINavigationController) {

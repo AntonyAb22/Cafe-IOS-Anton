@@ -7,7 +7,14 @@
 
 import UIKit
 
-class ProfileViewController: TableView {
-    var presenter: ProfilePresenter?
-    var router: ProfileRouter?
+protocol ProfileViewControllerProtocol: AnyObject {
+
+}
+
+class ProfileViewController: UIViewController, ProfileViewControllerProtocol  {
+    var interactor: ProfileInteractorProtocol!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

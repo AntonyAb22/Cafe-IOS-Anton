@@ -43,6 +43,18 @@
 		693ABDD32EED4B8000DEBBEE /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDCF2EED4B8000DEBBEE /* RegistrationRouter.swift */; };
 		693ABDD52EED5D8900DEBBEE /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDD42EED5D7C00DEBBEE /* RootRouter.swift */; };
 		693ABDD72EED5E0D00DEBBEE /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDD62EED5DF800DEBBEE /* CustomTabBarController.swift */; };
+		693ABDE02EEEB14000DEBBEE /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDDC2EEEB14000DEBBEE /* CartViewController.swift */; };
+		693ABDE12EEEB14000DEBBEE /* CartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDDE2EEEB14000DEBBEE /* CartPresenter.swift */; };
+		693ABDE22EEEB14000DEBBEE /* CartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDDD2EEEB14000DEBBEE /* CartInteractor.swift */; };
+		693ABDE32EEEB14000DEBBEE /* CartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDDF2EEEB14000DEBBEE /* CartRouter.swift */; };
+		693ABDE82EEEB14300DEBBEE /* ChatsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDE62EEEB14300DEBBEE /* ChatsPresenter.swift */; };
+		693ABDE92EEEB14300DEBBEE /* ChatsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDE52EEEB14300DEBBEE /* ChatsInteractor.swift */; };
+		693ABDEA2EEEB14300DEBBEE /* ChatsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDE72EEEB14300DEBBEE /* ChatsRouter.swift */; };
+		693ABDEB2EEEB14300DEBBEE /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDE42EEEB14300DEBBEE /* ChatsViewController.swift */; };
+		693ABDF02EEEB14500DEBBEE /* CategoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDED2EEEB14500DEBBEE /* CategoryInteractor.swift */; };
+		693ABDF12EEEB14500DEBBEE /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEE2EEEB14500DEBBEE /* CategoryPresenter.swift */; };
+		693ABDF22EEEB14500DEBBEE /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEF2EEEB14500DEBBEE /* CategoryRouter.swift */; };
+		693ABDF32EEEB14500DEBBEE /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEC2EEEB14500DEBBEE /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +95,18 @@
 		693ABDCF2EED4B8000DEBBEE /* RegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
 		693ABDD42EED5D7C00DEBBEE /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		693ABDD62EED5DF800DEBBEE /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		693ABDDC2EEEB14000DEBBEE /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		693ABDDD2EEEB14000DEBBEE /* CartInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartInteractor.swift; sourceTree = "<group>"; };
+		693ABDDE2EEEB14000DEBBEE /* CartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenter.swift; sourceTree = "<group>"; };
+		693ABDDF2EEEB14000DEBBEE /* CartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRouter.swift; sourceTree = "<group>"; };
+		693ABDE42EEEB14300DEBBEE /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		693ABDE52EEEB14300DEBBEE /* ChatsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsInteractor.swift; sourceTree = "<group>"; };
+		693ABDE62EEEB14300DEBBEE /* ChatsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsPresenter.swift; sourceTree = "<group>"; };
+		693ABDE72EEEB14300DEBBEE /* ChatsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsRouter.swift; sourceTree = "<group>"; };
+		693ABDEC2EEEB14500DEBBEE /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		693ABDED2EEEB14500DEBBEE /* CategoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInteractor.swift; sourceTree = "<group>"; };
+		693ABDEE2EEEB14500DEBBEE /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
+		693ABDEF2EEEB14500DEBBEE /* CategoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +165,9 @@
 		693ABD7C2EE1DC2000DEBBEE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				693ABDDB2EEEACBF00DEBBEE /* Cart */,
+				693ABDDA2EEEACB300DEBBEE /* Chats */,
+				693ABDD92EEEAA4300DEBBEE /* Category */,
 				693ABD982EE40FB600DEBBEE /* Profile */,
 				693ABD972EE40FAA00DEBBEE /* Main */,
 				693ABD7D2EE1DC3200DEBBEE /* ForgotPassword */,
@@ -236,6 +263,39 @@
 			path = NetworkService;
 			sourceTree = "<group>";
 		};
+		693ABDD92EEEAA4300DEBBEE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				693ABDEC2EEEB14500DEBBEE /* CategoryViewController.swift */,
+				693ABDED2EEEB14500DEBBEE /* CategoryInteractor.swift */,
+				693ABDEE2EEEB14500DEBBEE /* CategoryPresenter.swift */,
+				693ABDEF2EEEB14500DEBBEE /* CategoryRouter.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		693ABDDA2EEEACB300DEBBEE /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				693ABDE42EEEB14300DEBBEE /* ChatsViewController.swift */,
+				693ABDE52EEEB14300DEBBEE /* ChatsInteractor.swift */,
+				693ABDE62EEEB14300DEBBEE /* ChatsPresenter.swift */,
+				693ABDE72EEEB14300DEBBEE /* ChatsRouter.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		693ABDDB2EEEACBF00DEBBEE /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				693ABDDC2EEEB14000DEBBEE /* CartViewController.swift */,
+				693ABDDD2EEEB14000DEBBEE /* CartInteractor.swift */,
+				693ABDDE2EEEB14000DEBBEE /* CartPresenter.swift */,
+				693ABDDF2EEEB14000DEBBEE /* CartRouter.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,8 +387,16 @@
 				693ABDB22EE4156600DEBBEE /* TableViewItem.swift in Sources */,
 				693ABDB92EE418FE00DEBBEE /* AuthService.swift in Sources */,
 				693ABDAE2EE4143000DEBBEE /* TableViewCell.swift in Sources */,
+				693ABDF02EEEB14500DEBBEE /* CategoryInteractor.swift in Sources */,
+				693ABDF12EEEB14500DEBBEE /* CategoryPresenter.swift in Sources */,
+				693ABDF22EEEB14500DEBBEE /* CategoryRouter.swift in Sources */,
+				693ABDF32EEEB14500DEBBEE /* CategoryViewController.swift in Sources */,
 				693ABDA52EE4104D00DEBBEE /* MainInteractor.swift in Sources */,
 				693ABDA62EE4104D00DEBBEE /* MainRouter.swift in Sources */,
+				693ABDE02EEEB14000DEBBEE /* CartViewController.swift in Sources */,
+				693ABDE12EEEB14000DEBBEE /* CartPresenter.swift in Sources */,
+				693ABDE22EEEB14000DEBBEE /* CartInteractor.swift in Sources */,
+				693ABDE32EEEB14000DEBBEE /* CartRouter.swift in Sources */,
 				693ABDA72EE4104D00DEBBEE /* MainViewController.swift in Sources */,
 				693ABDD52EED5D8900DEBBEE /* RootRouter.swift in Sources */,
 				693ABDA82EE4104D00DEBBEE /* MainPresenter.swift in Sources */,
@@ -337,6 +405,10 @@
 				693ABDB02EE4155900DEBBEE /* TableViewModel.swift in Sources */,
 				693ABD892EE1DFAA00DEBBEE /* AppDelegate.swift in Sources */,
 				693ABD8B2EE1DFB900DEBBEE /* AuthViewController.swift in Sources */,
+				693ABDE82EEEB14300DEBBEE /* ChatsPresenter.swift in Sources */,
+				693ABDE92EEEB14300DEBBEE /* ChatsInteractor.swift in Sources */,
+				693ABDEA2EEEB14300DEBBEE /* ChatsRouter.swift in Sources */,
+				693ABDEB2EEEB14300DEBBEE /* ChatsViewController.swift in Sources */,
 				693ABD8E2EE1DFC500DEBBEE /* AuthRouter.swift in Sources */,
 				693ABDC22EE41D0D00DEBBEE /* ForgotRouter.swift in Sources */,
 				693ABDAA2EE410D800DEBBEE /* TableView.swift in Sources */,
