@@ -17,4 +17,12 @@ class ProfileRouter: ProfileRouterProtocol {
     init(rootViewController: UINavigationController) {
         self.rootViewController = rootViewController
     }
+    
+    static func createModule() -> UIViewController {
+        let view = ProfileViewController()
+        
+        let navController = UINavigationController(rootViewController: view)
+        
+        return navController
+    }
 }

@@ -55,6 +55,7 @@
 		693ABDF12EEEB14500DEBBEE /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEE2EEEB14500DEBBEE /* CategoryPresenter.swift */; };
 		693ABDF22EEEB14500DEBBEE /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEF2EEEB14500DEBBEE /* CategoryRouter.swift */; };
 		693ABDF32EEEB14500DEBBEE /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEC2EEEB14500DEBBEE /* CategoryViewController.swift */; };
+		69DB2A6B2EF68BA6003E00FB /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,7 @@
 		693ABDED2EEEB14500DEBBEE /* CategoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInteractor.swift; sourceTree = "<group>"; };
 		693ABDEE2EEEB14500DEBBEE /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
 		693ABDEF2EEEB14500DEBBEE /* CategoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
+		69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		693ABD7B2EE1DBFF00DEBBEE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				693ABDF02EEEB14500DEBBEE /* CategoryInteractor.swift in Sources */,
 				693ABDF12EEEB14500DEBBEE /* CategoryPresenter.swift in Sources */,
 				693ABDF22EEEB14500DEBBEE /* CategoryRouter.swift in Sources */,
+				69DB2A6B2EF68BA6003E00FB /* UserAuth.swift in Sources */,
 				693ABDF32EEEB14500DEBBEE /* CategoryViewController.swift in Sources */,
 				693ABDA52EE4104D00DEBBEE /* MainInteractor.swift in Sources */,
 				693ABDA62EE4104D00DEBBEE /* MainRouter.swift in Sources */,

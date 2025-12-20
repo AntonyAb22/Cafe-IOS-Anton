@@ -13,11 +13,9 @@ protocol MainInteractorProtocol {
 }
 
 class MainInteractor: MainInteractorProtocol {
-    var presenter: MainPresenterProtocol
-    var router: MainRouterProtocol
+    let authService: AuthService
     
-    init(presenter: MainPresenterProtocol, router: MainRouterProtocol) {
-        self.presenter = presenter
-        self.router = router
+    init(authService: AuthService) {
+        self.authService = authService
     }
 }

@@ -13,9 +13,13 @@ protocol MainPresenterProtocol {
 }
 
 class MainPresenter: TablePresenter, MainPresenterProtocol {
-    var viewController: MainViewControllerProtocol
+    let input: MainViewController
+    let router: MainRouterProtocol?
+    let interactor: MainInteractor
     
-    init(viewController: MainViewControllerProtocol) {
-        self.viewController = viewController
+    init(input: MainViewController, router: MainRouterProtocol? = nil, interactor: MainInteractor){
+        self.input = input
+        self.router = router
+        self.interactor = interactor
     }
 }

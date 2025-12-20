@@ -12,21 +12,38 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
 
+//    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+//        // Создаем корневой контроллер
+//        let rootViewController = AuthViewController()
+//
+//        // Получаем объект окна из сцены
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
+//
+//        // Создаем новое окно с использованием размеров сцены
+//        let window = UIWindow(windowScene: windowScene)
+//        window.rootViewController = rootViewController
+//
+//        // Устанавливаем новое окно как основное для сцены
+//        self.window = window
+//        window.makeKeyAndVisible()
+//
+//    }
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Создаем корневой контроллер
-        let rootViewController = AuthViewController()
-
-        // Получаем объект окна из сцены
+        
+        // Устанавливаем светлую тему для всего приложения
+        if #available(iOS 13.0, *) {
+            window?.overrideUserInterfaceStyle = .light
+        }
         guard let windowScene = (scene as? UIWindowScene) else { return }
-
-        // Создаем новое окно с использованием размеров сцены
+        
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = rootViewController
-
-        // Устанавливаем новое окно как основное для сцены
+        let router = RootRouter()
+        
+        window.rootViewController = router.tabBarController
         self.window = window
         window.makeKeyAndVisible()
-
+        router.start()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

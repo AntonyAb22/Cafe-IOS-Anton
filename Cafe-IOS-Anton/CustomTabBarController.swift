@@ -59,6 +59,7 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         let height = tabBar.frame.size.height
+        customButton.center = CGPoint(x: tabBar.center.x, y: view.bounds.height - height + 24)
     }
 }
 

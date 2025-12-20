@@ -43,6 +43,14 @@ class AuthInteractor: AuthInteractorProtocol {
     
     func login() {
         print(#function)
+        // проверка кредов
+        self.router.navigateToHome(
+            with: .init(
+                id: "какой-то id",
+                userName: "какое-то имя пользователя",
+                email: "какой-то имейл"
+            )
+        )
     }
     
     func passwordDidtap(text: String) {

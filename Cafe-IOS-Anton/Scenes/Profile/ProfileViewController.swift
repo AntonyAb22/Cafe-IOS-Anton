@@ -11,7 +11,7 @@ protocol ProfileViewControllerProtocol: AnyObject {
 
 }
 
-class ProfileViewController: UIViewController, ProfileViewControllerProtocol  {
+class ProfileViewController: TableView  {
     var interactor: ProfileInteractorProtocol!
     
     override func viewDidLoad() {

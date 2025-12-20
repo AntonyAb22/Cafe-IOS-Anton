@@ -8,13 +8,31 @@
 import UIKit
 
 protocol MainRouterProtocol {
-    var rootViewController: UINavigationController { get set }
+  
 }
 
 class MainRouter: MainRouterProtocol {
-    var rootViewController: UINavigationController
-    
-    init(rootViewController: UINavigationController) {
+    var rootViewController: MainViewController
+        
+    init(rootViewController: MainViewController) {
         self.rootViewController = rootViewController
+    }
+    
+    static func createModule() -> UIViewController {
+        let view = MainViewController()
+        
+        let authService = AuthService()
+       
+        let router = MainRouter(rootViewController: view)
+        let interactor = MainInteractor(authService: authService)
+        let presenter = MainPresenter(input: view,
+                                         router: router,
+                                         interactor: interactor)
+        
+        view.presenter = presenter
+        view.router = router
+        let navController = UINavigationController(rootViewController: view)
+        
+        return navController
     }
 }

@@ -20,6 +20,7 @@ public enum Shark {
         public static var logoImage: UIImage { return UIImage(named:"logoImage", in: bundle, compatibleWith: nil)! }
         public static var activeCustomImage: UIImage { return UIImage(named:"activeCustomImage", in: bundle, compatibleWith: nil)! }
         public static var inactiveCustomImage: UIImage { return UIImage(named:"inactiveCustomImage", in: bundle, compatibleWith: nil)! }
+        public static var category: UIImage { return UIImage(named:"category", in: bundle, compatibleWith: nil)! }
     }
 
     public enum C: CaseIterable {

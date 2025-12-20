@@ -243,7 +243,7 @@ extension AuthViewController {
     }
     
     @objc func loginButtonTapped() {
-        // interactor?.login()
+        interactor?.login()
     }
     
     @objc private func registrButtonTapped(){

@@ -7,9 +7,9 @@
 import UIKit
 
 protocol AuthRouterProtocol {
-    func navigateToHome()
     func navigateToForgotPassword()
     func navigateToRegistration()
+    func navigateToHome(with user: UserAuth)
 }
 
 class AuthRouter: AuthRouterProtocol {
@@ -46,6 +46,12 @@ class AuthRouter: AuthRouterProtocol {
             let newNavController = UINavigationController(rootViewController: registrationVC)
             newNavController.modalPresentationStyle = .fullScreen
             viewController?.present(newNavController, animated: true)
+        }
+    }
+    
+    func navigateToHome(with user: UserAuth) {
+        DispatchQueue.main.async {
+            self.viewController?.dismiss(animated: true)
         }
     }
 }
