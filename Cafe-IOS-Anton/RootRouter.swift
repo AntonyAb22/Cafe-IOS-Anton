@@ -84,7 +84,6 @@ class RootRouter {
     }
     
     func makeProfileScreenModule(title: String, imageName: String) -> UIViewController {
-//        let profileRouter = ProfileRouter(rootViewController: ProfileViewController())
         let profileViewController = ProfileRouter.createModule()
         
         profileViewController.tabBarItem = UITabBarItem(
@@ -92,7 +91,6 @@ class RootRouter {
             image: UIImage(systemName: imageName),
             tag: 4
         )
-//        return ???
         return profileViewController
     }
     
@@ -102,6 +100,10 @@ class RootRouter {
         let authPresenter = AuthPresenter(viewController: authViewController)
         let authRouter = AuthRouter(viewController: navController)
         let authInteractor = AuthInteractor(presenter: authPresenter, router: authRouter) // не хватает сервиса
+        authViewController.interactor = authInteractor
+        authViewController.router = authRouter
+        navController.modalPresentationStyle = .fullScreen
+        tabBarController.present(navController, animated: false) // неверная логика 
         
     }
 }
