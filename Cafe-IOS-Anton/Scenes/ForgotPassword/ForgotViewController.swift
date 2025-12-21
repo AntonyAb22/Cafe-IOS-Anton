@@ -33,9 +33,6 @@ class ForgotViewController: UIViewController {
 }
 
 extension ForgotViewController {
-    func forgotViewControllerDidGoBack() {
-        
-    }
     
     private func setupPresenter() {
         let root = UINavigationController()

@@ -9,4 +9,6 @@ struct UserAuth: Decodable {
     let id: String
     let userName: String
     let email: String
+    let phoneNumber: String
+    let password: String
 }
