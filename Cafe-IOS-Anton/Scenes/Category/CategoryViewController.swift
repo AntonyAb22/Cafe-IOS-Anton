@@ -16,5 +16,6 @@ class CategoryViewController: UIViewController, CategoryViewControllerProtocol  
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .purple
     }
 }

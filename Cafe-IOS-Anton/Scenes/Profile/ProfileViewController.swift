@@ -16,5 +16,6 @@ class ProfileViewController: TableView  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBlue
     }
 }

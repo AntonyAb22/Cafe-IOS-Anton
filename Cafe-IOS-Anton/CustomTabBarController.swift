@@ -8,7 +8,9 @@
 import UIKit
 
 class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
+    
     private let customButton = UIButton()
+    private let inactiveImage = Shark.I.inactiveCustomImage
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +23,8 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
         let inactiveImage = Shark.I.inactiveCustomImage.withRenderingMode(.alwaysOriginal)
 
         // Устанавливаем начальное состояние как неактивное
-        customButton.setImage(inactiveImage, for: .normal)
-        customButton.isSelected = false
+        customButton.setImage(activeImage, for: .normal)
+        customButton.isSelected = true
             
         customButton.frame = CGRect(x: 0, y: 0, width: 70, height: 70)
         customButton.layer.cornerRadius = 35
@@ -49,11 +51,11 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        if let inactiveImage = UIImage(named: "tasknetDesktop2")?.withRenderingMode(.alwaysOriginal) {
-            customButton.setImage(inactiveImage, for: .normal)
-            customButton.isSelected = false
-        }
-        
+        customButton.setImage(
+            inactiveImage.withRenderingMode(.alwaysOriginal),
+            for: .normal
+        )
+        customButton.isSelected = false
     }
     
     override func viewDidLayoutSubviews() {

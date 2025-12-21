@@ -17,4 +17,12 @@ class CategoryRouter: CategoryRouterProtocol {
     init(rootViewController: UINavigationController) {
         self.rootViewController = rootViewController
     }
+    
+    static func createModule() -> UIViewController {
+        let view = CategoryViewController()
+        
+        let navController = UINavigationController(rootViewController: view)
+        
+        return navController
+    }
 }

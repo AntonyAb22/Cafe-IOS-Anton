@@ -17,4 +17,12 @@ class CartRouter: CartRouterProtocol {
     init(rootViewController: UINavigationController) {
         self.rootViewController = rootViewController
     }
+    
+    static func createModule() -> UIViewController {
+        let view = CartViewController()
+        
+        let navController = UINavigationController(rootViewController: view)
+        
+        return navController
+    }
 }
