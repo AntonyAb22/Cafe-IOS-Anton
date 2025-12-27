@@ -56,6 +56,18 @@
 		693ABDF22EEEB14500DEBBEE /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEF2EEEB14500DEBBEE /* CategoryRouter.swift */; };
 		693ABDF32EEEB14500DEBBEE /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEC2EEEB14500DEBBEE /* CategoryViewController.swift */; };
 		69DB2A6B2EF68BA6003E00FB /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */; };
+		69DB2ACE2EFFCA54003E00FB /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2ACD2EFFCA4F003E00FB /* KeyChain.swift */; };
+		69DB2AD22EFFCADD003E00FB /* URLRequest+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AD12EFFCAC1003E00FB /* URLRequest+cURL.swift */; };
+		69DB2AD52EFFCBA4003E00FB /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AD42EFFCBA3003E00FB /* Serializer.swift */; };
+		69DB2AD72EFFCC28003E00FB /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AD62EFFCC19003E00FB /* Log.swift */; };
+		69DB2ADA2EFFCD5D003E00FB /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AD92EFFCD5A003E00FB /* Endpoint.swift */; };
+		69DB2ADC2EFFCD96003E00FB /* EndpointBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2ADB2EFFCD8F003E00FB /* EndpointBody.swift */; };
+		69DB2ADF2EFFD065003E00FB /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2ADE2EFFD060003E00FB /* HTTP.swift */; };
+		69DB2AE32EFFDC4D003E00FB /* MultipartRequestBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AE22EFFDC39003E00FB /* MultipartRequestBoundary.swift */; };
+		69DB2AE52EFFDC61003E00FB /* MultipartRequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AE42EFFDC5E003E00FB /* MultipartRequestBody.swift */; };
+		69DB2AE72EFFDCDB003E00FB /* MultipartRequestPartType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AE62EFFDCD9003E00FB /* MultipartRequestPartType.swift */; };
+		69DB2AE92EFFDCE9003E00FB /* MultipartRequestPartString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AE82EFFDCE8003E00FB /* MultipartRequestPartString.swift */; };
+		69DB2AEB2EFFDCF7003E00FB /* MultipartRequestPartFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AEA2EFFDCF5003E00FB /* MultipartRequestPartFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +121,18 @@
 		693ABDEE2EEEB14500DEBBEE /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
 		693ABDEF2EEEB14500DEBBEE /* CategoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
 		69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
+		69DB2ACD2EFFCA4F003E00FB /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		69DB2AD12EFFCAC1003E00FB /* URLRequest+cURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+cURL.swift"; sourceTree = "<group>"; };
+		69DB2AD42EFFCBA3003E00FB /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		69DB2AD62EFFCC19003E00FB /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		69DB2AD92EFFCD5A003E00FB /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		69DB2ADB2EFFCD8F003E00FB /* EndpointBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointBody.swift; sourceTree = "<group>"; };
+		69DB2ADE2EFFD060003E00FB /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		69DB2AE22EFFDC39003E00FB /* MultipartRequestBoundary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartRequestBoundary.swift; sourceTree = "<group>"; };
+		69DB2AE42EFFDC5E003E00FB /* MultipartRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartRequestBody.swift; sourceTree = "<group>"; };
+		69DB2AE62EFFDCD9003E00FB /* MultipartRequestPartType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartRequestPartType.swift; sourceTree = "<group>"; };
+		69DB2AE82EFFDCE8003E00FB /* MultipartRequestPartString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartRequestPartString.swift; sourceTree = "<group>"; };
+		69DB2AEA2EFFDCF5003E00FB /* MultipartRequestPartFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartRequestPartFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +197,7 @@
 				693ABDD92EEEAA4300DEBBEE /* Category */,
 				693ABD982EE40FB600DEBBEE /* Profile */,
 				693ABD972EE40FAA00DEBBEE /* Main */,
-				693ABD7D2EE1DC3200DEBBEE /* ForgotPassword */,
+				693ABD7D2EE1DC3200DEBBEE /* Forgot password */,
 				693ABD7E2EE1DC4100DEBBEE /* Registration */,
 				693ABD822EE1DC5A00DEBBEE /* AuthViewController.swift */,
 				693ABD7F2EE1DC5A00DEBBEE /* AuthInteractor.swift */,
@@ -183,7 +207,7 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		693ABD7D2EE1DC3200DEBBEE /* ForgotPassword */ = {
+		693ABD7D2EE1DC3200DEBBEE /* Forgot password */ = {
 			isa = PBXGroup;
 			children = (
 				693ABDBB2EE41CE000DEBBEE /* ForgotViewController.swift */,
@@ -191,7 +215,7 @@
 				693ABDBF2EE41D0300DEBBEE /* ForgotPresenter.swift */,
 				693ABDC12EE41D0A00DEBBEE /* ForgotRouter.swift */,
 			);
-			path = ForgotPassword;
+			path = "Forgot password";
 			sourceTree = "<group>";
 		};
 		693ABD7E2EE1DC4100DEBBEE /* Registration */ = {
@@ -208,6 +232,12 @@
 		693ABD872EE1DDBA00DEBBEE /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				69DB2ADD2EFFCDB1003E00FB /* HTTP request maneger */,
+				69DB2AD82EFFCD52003E00FB /* Endpoint */,
+				69DB2AD32EFFCB9D003E00FB /* Serializer */,
+				69DB2AD02EFFCAA2003E00FB /* URLRequest+cURL */,
+				69DB2ACF2EFFCA5B003E00FB /* Log */,
+				69DB2ACC2EFFCA25003E00FB /* KeyChain */,
 				693ABDBA2EE4191900DEBBEE /* NetworkService */,
 				693ABDB72EE418EB00DEBBEE /* Auth */,
 			);
@@ -299,6 +329,76 @@
 			path = Cart;
 			sourceTree = "<group>";
 		};
+		69DB2ACC2EFFCA25003E00FB /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				69DB2ACD2EFFCA4F003E00FB /* KeyChain.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		69DB2ACF2EFFCA5B003E00FB /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				69DB2AD62EFFCC19003E00FB /* Log.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		69DB2AD02EFFCAA2003E00FB /* URLRequest+cURL */ = {
+			isa = PBXGroup;
+			children = (
+				69DB2AD12EFFCAC1003E00FB /* URLRequest+cURL.swift */,
+			);
+			path = "URLRequest+cURL";
+			sourceTree = "<group>";
+		};
+		69DB2AD32EFFCB9D003E00FB /* Serializer */ = {
+			isa = PBXGroup;
+			children = (
+				69DB2AD42EFFCBA3003E00FB /* Serializer.swift */,
+			);
+			path = Serializer;
+			sourceTree = "<group>";
+		};
+		69DB2AD82EFFCD52003E00FB /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				69DB2ADB2EFFCD8F003E00FB /* EndpointBody.swift */,
+				69DB2AD92EFFCD5A003E00FB /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		69DB2ADD2EFFCDB1003E00FB /* HTTP request maneger */ = {
+			isa = PBXGroup;
+			children = (
+				69DB2AE02EFFDBB7003E00FB /* Multipart request */,
+				69DB2AE12EFFDBC8003E00FB /* Parts */,
+				69DB2ADE2EFFD060003E00FB /* HTTP.swift */,
+			);
+			path = "HTTP request maneger";
+			sourceTree = "<group>";
+		};
+		69DB2AE02EFFDBB7003E00FB /* Multipart request */ = {
+			isa = PBXGroup;
+			children = (
+				69DB2AE42EFFDC5E003E00FB /* MultipartRequestBody.swift */,
+				69DB2AE22EFFDC39003E00FB /* MultipartRequestBoundary.swift */,
+			);
+			path = "Multipart request";
+			sourceTree = "<group>";
+		};
+		69DB2AE12EFFDBC8003E00FB /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				69DB2AEA2EFFDCF5003E00FB /* MultipartRequestPartFile.swift */,
+				69DB2AE82EFFDCE8003E00FB /* MultipartRequestPartString.swift */,
+				69DB2AE62EFFDCD9003E00FB /* MultipartRequestPartType.swift */,
+			);
+			path = Parts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,40 +478,51 @@
 			files = (
 				693ABDA02EE4101F00DEBBEE /* ProfileRouter.swift in Sources */,
 				693ABDBC2EE41CEC00DEBBEE /* ForgotViewController.swift in Sources */,
+				69DB2AE32EFFDC4D003E00FB /* MultipartRequestBoundary.swift in Sources */,
+				69DB2ADC2EFFCD96003E00FB /* EndpointBody.swift in Sources */,
 				693ABDAC2EE413C200DEBBEE /* TablePresenter.swift in Sources */,
 				693ABD9E2EE4101900DEBBEE /* ProfilePresenter.swift in Sources */,
 				693ABD8D2EE1DFC100DEBBEE /* AuthPresenter.swift in Sources */,
 				693ABDD72EED5E0D00DEBBEE /* CustomTabBarController.swift in Sources */,
+				69DB2ACE2EFFCA54003E00FB /* KeyChain.swift in Sources */,
 				693ABDC02EE41D0700DEBBEE /* ForgotPresenter.swift in Sources */,
 				693ABDD02EED4B8000DEBBEE /* RegistrationPresenter.swift in Sources */,
 				693ABDD12EED4B8000DEBBEE /* RegistrationViewController.swift in Sources */,
 				693ABDD22EED4B8000DEBBEE /* RegistrationInteractor.swift in Sources */,
+				69DB2ADF2EFFD065003E00FB /* HTTP.swift in Sources */,
 				693ABDD32EED4B8000DEBBEE /* RegistrationRouter.swift in Sources */,
+				69DB2AEB2EFFDCF7003E00FB /* MultipartRequestPartFile.swift in Sources */,
 				693ABDB22EE4156600DEBBEE /* TableViewItem.swift in Sources */,
 				693ABDB92EE418FE00DEBBEE /* AuthService.swift in Sources */,
 				693ABDAE2EE4143000DEBBEE /* TableViewCell.swift in Sources */,
 				693ABDF02EEEB14500DEBBEE /* CategoryInteractor.swift in Sources */,
 				693ABDF12EEEB14500DEBBEE /* CategoryPresenter.swift in Sources */,
 				693ABDF22EEEB14500DEBBEE /* CategoryRouter.swift in Sources */,
+				69DB2AE72EFFDCDB003E00FB /* MultipartRequestPartType.swift in Sources */,
 				69DB2A6B2EF68BA6003E00FB /* UserAuth.swift in Sources */,
 				693ABDF32EEEB14500DEBBEE /* CategoryViewController.swift in Sources */,
 				693ABDA52EE4104D00DEBBEE /* MainInteractor.swift in Sources */,
 				693ABDA62EE4104D00DEBBEE /* MainRouter.swift in Sources */,
 				693ABDE02EEEB14000DEBBEE /* CartViewController.swift in Sources */,
+				69DB2AE92EFFDCE9003E00FB /* MultipartRequestPartString.swift in Sources */,
 				693ABDE12EEEB14000DEBBEE /* CartPresenter.swift in Sources */,
 				693ABDE22EEEB14000DEBBEE /* CartInteractor.swift in Sources */,
 				693ABDE32EEEB14000DEBBEE /* CartRouter.swift in Sources */,
 				693ABDA72EE4104D00DEBBEE /* MainViewController.swift in Sources */,
 				693ABDD52EED5D8900DEBBEE /* RootRouter.swift in Sources */,
 				693ABDA82EE4104D00DEBBEE /* MainPresenter.swift in Sources */,
+				69DB2AD22EFFCADD003E00FB /* URLRequest+cURL.swift in Sources */,
 				693ABD8C2EE1DFBC00DEBBEE /* AuthInteractor.swift in Sources */,
 				693ABD9C2EE4100F00DEBBEE /* ProfileInteractor.swift in Sources */,
+				69DB2AD72EFFCC28003E00FB /* Log.swift in Sources */,
 				693ABDB02EE4155900DEBBEE /* TableViewModel.swift in Sources */,
 				693ABD892EE1DFAA00DEBBEE /* AppDelegate.swift in Sources */,
 				693ABD8B2EE1DFB900DEBBEE /* AuthViewController.swift in Sources */,
 				693ABDE82EEEB14300DEBBEE /* ChatsPresenter.swift in Sources */,
+				69DB2AE52EFFDC61003E00FB /* MultipartRequestBody.swift in Sources */,
 				693ABDE92EEEB14300DEBBEE /* ChatsInteractor.swift in Sources */,
 				693ABDEA2EEEB14300DEBBEE /* ChatsRouter.swift in Sources */,
+				69DB2ADA2EFFCD5D003E00FB /* Endpoint.swift in Sources */,
 				693ABDEB2EEEB14300DEBBEE /* ChatsViewController.swift in Sources */,
 				693ABD8E2EE1DFC500DEBBEE /* AuthRouter.swift in Sources */,
 				693ABDC22EE41D0D00DEBBEE /* ForgotRouter.swift in Sources */,
@@ -419,6 +530,7 @@
 				693ABD8A2EE1DFAF00DEBBEE /* SceneDelegate.swift in Sources */,
 				693ABDC42EE5838000DEBBEE /* UIColor.swift in Sources */,
 				693ABD9A2EE40FE700DEBBEE /* ProfileViewController.swift in Sources */,
+				69DB2AD52EFFCBA4003E00FB /* Serializer.swift in Sources */,
 				693ABDBE2EE41D0000DEBBEE /* ForgotInteractor.swift in Sources */,
 				693ABD912EE1DFD100DEBBEE /* Tap.swift in Sources */,
 				693ABD922EE1DFD500DEBBEE /* Shark.swift in Sources */,

@@ -1,17 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "zaryadka_inactive_83x83.pdf",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "zaryadka_circle_only_83x83.pdf",
+      "idiom" : "universal"
     }
   ],
   "info" : {
