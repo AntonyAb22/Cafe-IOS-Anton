@@ -48,7 +48,9 @@ class AuthInteractor: AuthInteractorProtocol {
             with: .init(
                 id: "какой-то id",
                 userName: "какое-то имя пользователя",
-                email: "какой-то имейл"
+                email: "какой-то имейл",
+                phoneNumber: "+7905",
+                password: "1234"
             )
         )
     }
