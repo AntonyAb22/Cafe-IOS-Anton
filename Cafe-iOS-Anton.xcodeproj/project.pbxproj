@@ -392,9 +392,9 @@
 		69DB2AE12EFFDBC8003E00FB /* Parts */ = {
 			isa = PBXGroup;
 			children = (
-				69DB2AEA2EFFDCF5003E00FB /* MultipartRequestPartFile.swift */,
-				69DB2AE82EFFDCE8003E00FB /* MultipartRequestPartString.swift */,
 				69DB2AE62EFFDCD9003E00FB /* MultipartRequestPartType.swift */,
+				69DB2AE82EFFDCE8003E00FB /* MultipartRequestPartString.swift */,
+				69DB2AEA2EFFDCF5003E00FB /* MultipartRequestPartFile.swift */,
 			);
 			path = Parts;
 			sourceTree = "<group>";
