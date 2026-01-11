@@ -36,15 +36,15 @@ public enum HTTPRequestError : Error {
     case forbiddenError
     case internalServerError
     case notFoundError
-    case requestBodyEncodingError(Error: Error)
-    case requestExecutionError(Error: Error)
-    case responseBodyDecodingError(Error: Error)
+    case requestBodyEncodingError(error: Error)
+    case requestExecutionError(error: Error)
+    case responseBodyDecodingError(error: Error)
     case responseIsMissing
     case serverError(code: Int)
     case unauthorizedError
     case unknownError
     case unknownResponseStatusError(code: Int)
-    case urlGenerationError(Error: Error)
+    case urlGenerationError(error: Error)
 }
 
 public func httpRequestErrorByCode(_ code: Int) -> HTTPRequestError {

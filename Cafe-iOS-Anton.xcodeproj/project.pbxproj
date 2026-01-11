@@ -55,6 +55,7 @@
 		693ABDF12EEEB14500DEBBEE /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEE2EEEB14500DEBBEE /* CategoryPresenter.swift */; };
 		693ABDF22EEEB14500DEBBEE /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEF2EEEB14500DEBBEE /* CategoryRouter.swift */; };
 		693ABDF32EEEB14500DEBBEE /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEC2EEEB14500DEBBEE /* CategoryViewController.swift */; };
+		694A832C2F139237002CE2CD /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A832B2F139224002CE2CD /* HTTPRequestManager.swift */; };
 		69DB2A6B2EF68BA6003E00FB /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */; };
 		69DB2ACE2EFFCA54003E00FB /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2ACD2EFFCA4F003E00FB /* KeyChain.swift */; };
 		69DB2AD22EFFCADD003E00FB /* URLRequest+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AD12EFFCAC1003E00FB /* URLRequest+cURL.swift */; };
@@ -120,6 +121,7 @@
 		693ABDED2EEEB14500DEBBEE /* CategoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInteractor.swift; sourceTree = "<group>"; };
 		693ABDEE2EEEB14500DEBBEE /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
 		693ABDEF2EEEB14500DEBBEE /* CategoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
+		694A832B2F139224002CE2CD /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
 		69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
 		69DB2ACD2EFFCA4F003E00FB /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		69DB2AD12EFFCAC1003E00FB /* URLRequest+cURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+cURL.swift"; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 		69DB2ADD2EFFCDB1003E00FB /* HTTP request maneger */ = {
 			isa = PBXGroup;
 			children = (
+				694A832B2F139224002CE2CD /* HTTPRequestManager.swift */,
 				69DB2AE02EFFDBB7003E00FB /* Multipart request */,
 				69DB2AE12EFFDBC8003E00FB /* Parts */,
 				69DB2ADE2EFFD060003E00FB /* HTTP.swift */,
@@ -508,6 +511,7 @@
 				693ABDE12EEEB14000DEBBEE /* CartPresenter.swift in Sources */,
 				693ABDE22EEEB14000DEBBEE /* CartInteractor.swift in Sources */,
 				693ABDE32EEEB14000DEBBEE /* CartRouter.swift in Sources */,
+				694A832C2F139237002CE2CD /* HTTPRequestManager.swift in Sources */,
 				693ABDA72EE4104D00DEBBEE /* MainViewController.swift in Sources */,
 				693ABDD52EED5D8900DEBBEE /* RootRouter.swift in Sources */,
 				693ABDA82EE4104D00DEBBEE /* MainPresenter.swift in Sources */,
