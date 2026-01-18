@@ -50,7 +50,7 @@ public extension Endpoint {
         nil
     }
     
-    var baseUrl: URL {
+    var baseURL: URL {
         guard let url = URL(string: "Cafe-anton.filtsy.ru/") else {
             fatalError()
         }

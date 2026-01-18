@@ -9,6 +9,6 @@ protocol AuthServiceProtocol {
     
 }
 
-class AuthService: AuthServiceProtocol {
+class AuthService: NetworkService<AuthEndPoint>, AuthServiceProtocol {
     
 }

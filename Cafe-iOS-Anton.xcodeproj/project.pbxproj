@@ -56,6 +56,9 @@
 		693ABDF22EEEB14500DEBBEE /* CategoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEF2EEEB14500DEBBEE /* CategoryRouter.swift */; };
 		693ABDF32EEEB14500DEBBEE /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEC2EEEB14500DEBBEE /* CategoryViewController.swift */; };
 		694A832C2F139237002CE2CD /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A832B2F139224002CE2CD /* HTTPRequestManager.swift */; };
+		69B004ED2F1B7BC3008C0B09 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004EC2F1B7BC2008C0B09 /* NetworkService.swift */; };
+		69B004EF2F1CD1C4008C0B09 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004EE2F1CD1BF008C0B09 /* AuthToken.swift */; };
+		69B004F32F1CD867008C0B09 /* AuthEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004F22F1CD861008C0B09 /* AuthEndPoint.swift */; };
 		69DB2A6B2EF68BA6003E00FB /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */; };
 		69DB2ACE2EFFCA54003E00FB /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2ACD2EFFCA4F003E00FB /* KeyChain.swift */; };
 		69DB2AD22EFFCADD003E00FB /* URLRequest+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AD12EFFCAC1003E00FB /* URLRequest+cURL.swift */; };
@@ -122,6 +125,9 @@
 		693ABDEE2EEEB14500DEBBEE /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
 		693ABDEF2EEEB14500DEBBEE /* CategoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRouter.swift; sourceTree = "<group>"; };
 		694A832B2F139224002CE2CD /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		69B004EC2F1B7BC2008C0B09 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		69B004EE2F1CD1BF008C0B09 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
+		69B004F22F1CD861008C0B09 /* AuthEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndPoint.swift; sourceTree = "<group>"; };
 		69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
 		69DB2ACD2EFFCA4F003E00FB /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		69DB2AD12EFFCAC1003E00FB /* URLRequest+cURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+cURL.swift"; sourceTree = "<group>"; };
@@ -186,6 +192,7 @@
 		693ABD7B2EE1DBFF00DEBBEE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				69B004EE2F1CD1BF008C0B09 /* AuthToken.swift */,
 				69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */,
 			);
 			path = Models;
@@ -234,6 +241,7 @@
 		693ABD872EE1DDBA00DEBBEE /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				69B004F12F1CD83F008C0B09 /* New Group */,
 				69DB2ADD2EFFCDB1003E00FB /* HTTP request maneger */,
 				69DB2AD82EFFCD52003E00FB /* Endpoint */,
 				69DB2AD32EFFCB9D003E00FB /* Serializer */,
@@ -286,6 +294,7 @@
 		693ABDB72EE418EB00DEBBEE /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				69B004F22F1CD861008C0B09 /* AuthEndPoint.swift */,
 				693ABDB82EE418F600DEBBEE /* AuthService.swift */,
 			);
 			path = Auth;
@@ -294,6 +303,7 @@
 		693ABDBA2EE4191900DEBBEE /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				69B004EC2F1B7BC2008C0B09 /* NetworkService.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -329,6 +339,13 @@
 				693ABDDF2EEEB14000DEBBEE /* CartRouter.swift */,
 			);
 			path = Cart;
+			sourceTree = "<group>";
+		};
+		69B004F12F1CD83F008C0B09 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		69DB2ACC2EFFCA25003E00FB /* KeyChain */ = {
@@ -489,6 +506,7 @@
 				693ABDD72EED5E0D00DEBBEE /* CustomTabBarController.swift in Sources */,
 				69DB2ACE2EFFCA54003E00FB /* KeyChain.swift in Sources */,
 				693ABDC02EE41D0700DEBBEE /* ForgotPresenter.swift in Sources */,
+				69B004ED2F1B7BC3008C0B09 /* NetworkService.swift in Sources */,
 				693ABDD02EED4B8000DEBBEE /* RegistrationPresenter.swift in Sources */,
 				693ABDD12EED4B8000DEBBEE /* RegistrationViewController.swift in Sources */,
 				693ABDD22EED4B8000DEBBEE /* RegistrationInteractor.swift in Sources */,
@@ -500,6 +518,7 @@
 				693ABDAE2EE4143000DEBBEE /* TableViewCell.swift in Sources */,
 				693ABDF02EEEB14500DEBBEE /* CategoryInteractor.swift in Sources */,
 				693ABDF12EEEB14500DEBBEE /* CategoryPresenter.swift in Sources */,
+				69B004F32F1CD867008C0B09 /* AuthEndPoint.swift in Sources */,
 				693ABDF22EEEB14500DEBBEE /* CategoryRouter.swift in Sources */,
 				69DB2AE72EFFDCDB003E00FB /* MultipartRequestPartType.swift in Sources */,
 				69DB2A6B2EF68BA6003E00FB /* UserAuth.swift in Sources */,
@@ -537,6 +556,7 @@
 				69DB2AD52EFFCBA4003E00FB /* Serializer.swift in Sources */,
 				693ABDBE2EE41D0000DEBBEE /* ForgotInteractor.swift in Sources */,
 				693ABD912EE1DFD100DEBBEE /* Tap.swift in Sources */,
+				69B004EF2F1CD1C4008C0B09 /* AuthToken.swift in Sources */,
 				693ABD922EE1DFD500DEBBEE /* Shark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
