@@ -59,6 +59,8 @@
 		69B004ED2F1B7BC3008C0B09 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004EC2F1B7BC2008C0B09 /* NetworkService.swift */; };
 		69B004EF2F1CD1C4008C0B09 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004EE2F1CD1BF008C0B09 /* AuthToken.swift */; };
 		69B004F32F1CD867008C0B09 /* AuthEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004F22F1CD861008C0B09 /* AuthEndPoint.swift */; };
+		69B004F62F1CE368008C0B09 /* GRDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004F52F1CE364008C0B09 /* GRDB.swift */; };
+		69B004FE2F1CE59B008C0B09 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 69B004FD2F1CE59B008C0B09 /* GRDB */; };
 		69DB2A6B2EF68BA6003E00FB /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */; };
 		69DB2ACE2EFFCA54003E00FB /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2ACD2EFFCA4F003E00FB /* KeyChain.swift */; };
 		69DB2AD22EFFCADD003E00FB /* URLRequest+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DB2AD12EFFCAC1003E00FB /* URLRequest+cURL.swift */; };
@@ -128,6 +130,7 @@
 		69B004EC2F1B7BC2008C0B09 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		69B004EE2F1CD1BF008C0B09 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
 		69B004F22F1CD861008C0B09 /* AuthEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndPoint.swift; sourceTree = "<group>"; };
+		69B004F52F1CE364008C0B09 /* GRDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDB.swift; sourceTree = "<group>"; };
 		69DB2A6A2EF68B9E003E00FB /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
 		69DB2ACD2EFFCA4F003E00FB /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		69DB2AD12EFFCAC1003E00FB /* URLRequest+cURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+cURL.swift"; sourceTree = "<group>"; };
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A1A75FB2EDAF0EA0011F378 /* SnapKit in Frameworks */,
+				69B004FE2F1CE59B008C0B09 /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +178,7 @@
 		693ABD782EE1DB7C00DEBBEE /* Cafe-IOS-Anton */ = {
 			isa = PBXGroup;
 			children = (
+				69B004F42F1CE34C008C0B09 /* DataBase */,
 				693ABDD62EED5DF800DEBBEE /* CustomTabBarController.swift */,
 				693ABDD42EED5D7C00DEBBEE /* RootRouter.swift */,
 				693ABD792EE1DB9600DEBBEE /* AppDelegate.swift */,
@@ -348,6 +353,14 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		69B004F42F1CE34C008C0B09 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				69B004F52F1CE364008C0B09 /* GRDB.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
 		69DB2ACC2EFFCA25003E00FB /* KeyChain */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +450,7 @@
 			name = "Cafe-iOS-Anton";
 			packageProductDependencies = (
 				3A1A75FA2EDAF0EA0011F378 /* SnapKit */,
+				69B004FD2F1CE59B008C0B09 /* GRDB */,
 			);
 			productName = "Cafe-iOS-Anton";
 			productReference = 3A1A75E12EDAF0590011F378 /* Cafe-iOS-Anton.app */;
@@ -468,6 +482,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				3A1A75F92EDAF0EA0011F378 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				69B004FC2F1CE59B008C0B09 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3A1A75E22EDAF0590011F378 /* Products */;
@@ -550,6 +565,7 @@
 				693ABD8E2EE1DFC500DEBBEE /* AuthRouter.swift in Sources */,
 				693ABDC22EE41D0D00DEBBEE /* ForgotRouter.swift in Sources */,
 				693ABDAA2EE410D800DEBBEE /* TableView.swift in Sources */,
+				69B004F62F1CE368008C0B09 /* GRDB.swift in Sources */,
 				693ABD8A2EE1DFAF00DEBBEE /* SceneDelegate.swift in Sources */,
 				693ABDC42EE5838000DEBBEE /* UIColor.swift in Sources */,
 				693ABD9A2EE40FE700DEBBEE /* ProfileViewController.swift in Sources */,
@@ -773,6 +789,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		69B004FC2F1CE59B008C0B09 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -780,6 +804,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3A1A75F92EDAF0EA0011F378 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		69B004FD2F1CE59B008C0B09 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69B004FC2F1CE59B008C0B09 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
