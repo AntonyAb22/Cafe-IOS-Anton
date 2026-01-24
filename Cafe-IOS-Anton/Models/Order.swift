@@ -13,6 +13,7 @@ struct Order {
     let time: String // время осущ заказа
     let address: String // адрес доставки
     let payment: Payment // способ оплаты
+    let deliveryDate: String // дата доставки
 }
 
 enum Payment: String {
