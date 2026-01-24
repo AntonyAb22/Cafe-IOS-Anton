@@ -12,3 +12,5 @@ struct UserAuth: Decodable {
     let phoneNumber: String
     let password: String
 }
+
+
