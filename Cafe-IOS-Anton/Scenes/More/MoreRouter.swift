@@ -1,5 +1,5 @@
 //
-//  ProfileRouter.swift
+// MoreRouter.swift
 //  Cafe-iOS-Anton
 //
 //  Created by Антон Абалуев on 06.12.2025.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol ProfileRouterProtocol {
+protocol MoreRouterProtocol {
     var rootViewController: UINavigationController { get set }
 }
 
-class ProfileRouter: ProfileRouterProtocol {
+class MoreRouter: MoreRouterProtocol {
     var rootViewController: UINavigationController
     
     init(rootViewController: UINavigationController) {
@@ -19,7 +19,7 @@ class ProfileRouter: ProfileRouterProtocol {
     }
     
     static func createModule() -> UIViewController {
-        let view = ProfileViewController()
+        let view = MoreViewController()
         
         let navController = UINavigationController(rootViewController: view)
         

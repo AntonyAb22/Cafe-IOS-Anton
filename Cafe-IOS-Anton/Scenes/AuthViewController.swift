@@ -37,8 +37,8 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         
         view.backgroundColor = UIColor(red: 231/255.0, green: 235/255.0, blue: 241/255.0, alpha: 1.0)
         
-        loginTF.text = ""
-        passwordTF.text = ""
+        loginTF.text = "a66110222@gmail.com" // a66110222@gmail.com
+        passwordTF.text = "Anton2004" // Anton2004
         loginTF.delegate = self
         passwordTF.delegate = self
         //interactor?.loginDidtap(text: loginTF.text ?? "")

@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  MoreViewController.swift
 //  Cafe-iOS-Anton
 //
 //  Created by Антон Абалуев on 06.12.2025.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol ProfileViewControllerProtocol: AnyObject {
+protocol MoreViewControllerProtocol: AnyObject {
 
 }
 
-class ProfileViewController: TableView  {
-    var interactor: ProfileInteractorProtocol!
+class MoreViewController: TableView  {
+    var interactor: MoreInteractorProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()

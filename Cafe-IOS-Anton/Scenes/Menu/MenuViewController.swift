@@ -1,5 +1,5 @@
 //
-//  CategoryViewController.swift
+//  MenuViewController.swift
 //  Cafe-iOS-Anton
 //
 //  Created by Антон Абалуев on 06.12.2025.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol CategoryViewControllerProtocol: AnyObject {
+protocol MenuViewControllerProtocol: AnyObject {
 
 }
 
-class CategoryViewController: UIViewController, CategoryViewControllerProtocol  {
-    var interactor: CategoryInteractorProtocol!
+class MenuViewController: UIViewController, MenuViewControllerProtocol  {
+    var interactor: MenuInteractorProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()

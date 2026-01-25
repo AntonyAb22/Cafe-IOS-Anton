@@ -18,17 +18,17 @@ class RootRouter {
     
     func start() {
         let chatsViewController = makeChatsScreenModule(title: "Чаты", imageName: "chats")
-        let categoryViewController = makeCategoryScreenModule(title: "Категории", imageName: "category")
+        let menuViewController = makeMenuScreenModule(title: "Меню", imageName: "fork.knife")
         let mainViewController = MainRouter.createModule()
         let cartViewController = makeCartScreenModule(title: "Корзина", imageName: "cart")
-        let profileViewController = makeProfileScreenModule(title: "Профиль", imageName: "person.crop.circle.fill")
+        let moreViewController = makeMoreScreenModule(title: "Ещё", imageName: "category")
         
         tabBarController.viewControllers = [
             chatsViewController.rootViewController,
-            categoryViewController,
+            menuViewController,
             mainViewController,
             cartViewController,
-            profileViewController
+            moreViewController
         ]
         
         chatsViewController.rootViewController.tabBarItem.isEnabled = false
@@ -59,16 +59,16 @@ class RootRouter {
         return router
     }
     
-    func makeCategoryScreenModule(title: String, imageName: String) -> UIViewController {
-        let categoryViewController = CategoryRouter.createModule()
+    func makeMenuScreenModule(title: String, imageName: String) -> UIViewController {
+        let menuViewController = MenuRouter.createModule()
     
-        categoryViewController.tabBarItem = UITabBarItem(
+        menuViewController.tabBarItem = UITabBarItem(
             title: title,
-            image: UIImage(named: imageName),
+            image: UIImage(systemName: imageName),
             tag: 1
         )
         
-        return categoryViewController
+        return menuViewController
     }
     
     func makeCartScreenModule(title: String, imageName: String) -> UIViewController {
@@ -83,15 +83,15 @@ class RootRouter {
         return cartViewController
     }
     
-    func makeProfileScreenModule(title: String, imageName: String) -> UIViewController {
-        let profileViewController = ProfileRouter.createModule()
+    func makeMoreScreenModule(title: String, imageName: String) -> UIViewController {
+        let moreViewController = MoreRouter.createModule()
         
-        profileViewController.tabBarItem = UITabBarItem(
+        moreViewController.tabBarItem = UITabBarItem(
             title: title,
-            image: UIImage(systemName: imageName),
+            image: UIImage(named: imageName),
             tag: 4
         )
-        return profileViewController
+        return moreViewController
     }
     
     private func showLogin() {

@@ -1,5 +1,5 @@
 //
-//  CategoryRouter.swift
+//  MenuRouter.swift
 //  Cafe-iOS-Anton
 //
 //  Created by Антон Абалуев on 06.12.2025.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol CategoryRouterProtocol {
+protocol MenuRouterProtocol {
     var rootViewController: UINavigationController { get set }
 }
 
-class CategoryRouter: CategoryRouterProtocol {
+class MenuRouter: MenuRouterProtocol {
     var rootViewController: UINavigationController
     
     init(rootViewController: UINavigationController) {
@@ -19,7 +19,7 @@ class CategoryRouter: CategoryRouterProtocol {
     }
     
     static func createModule() -> UIViewController {
-        let view = CategoryViewController()
+        let view = MenuViewController()
         
         let navController = UINavigationController(rootViewController: view)
         
