@@ -21,12 +21,14 @@ public enum Shark {
         public static var activeCustomImage: UIImage { return UIImage(named:"activeCustomImage", in: bundle, compatibleWith: nil)! }
         public static var inactiveCustomImage: UIImage { return UIImage(named:"inactiveCustomImage", in: bundle, compatibleWith: nil)! }
         public static var category: UIImage { return UIImage(named:"category", in: bundle, compatibleWith: nil)! }
+        public static var profile: UIImage { return UIImage(named:"profile", in: bundle, compatibleWith: nil)! }
     }
 
     public enum C: CaseIterable {
         public static var accentColor: UIColor { return UIColor(named: "AccentColor", in: bundle, compatibleWith: nil)! }
         public static var blueGreyDarken1: UIColor { return UIColor(named: "blueGreyDarken1", in: bundle, compatibleWith: nil)! }
         public static var blueGreyDarken3: UIColor { return UIColor(named: "blueGreyDarken3", in: bundle, compatibleWith: nil)! }
+        public static var blueGreyLighten3: UIColor { return UIColor(named: "blueGreyLighten3", in: bundle, compatibleWith: nil)! }
     }
 
     public enum S {
