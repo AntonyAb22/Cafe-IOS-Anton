@@ -51,7 +51,7 @@ public extension Endpoint {
     }
     
     var baseURL: URL {
-        guard let url = URL(string: "Cafe-anton.filtsy.ru/") else {
+        guard let url = URL(string: "https://cafe-anton.filtsy.ru/api/") else {
             fatalError()
         }
         return url
@@ -62,7 +62,7 @@ public extension Endpoint {
     }
     
     var subPath: String {
-        "v1"
+        "v2"
     }
 }
 

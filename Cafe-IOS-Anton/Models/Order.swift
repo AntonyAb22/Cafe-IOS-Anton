@@ -5,7 +5,12 @@
 //  Created by Антон Абалуев on 24.01.2026.
 //
 
-struct Order {
+struct OrdersList: Codable {
+    let list: [Order]
+    let total: Int  //  коли - во заказов
+}
+
+struct Order: Codable {
     let id: String
     let cakeName: String // наименование продукта
     let count: Int // Кол-во продуктов
@@ -16,6 +21,6 @@ struct Order {
     let deliveryDate: String // дата доставки
 }
 
-enum Payment: String {
+enum Payment: String, Codable {
     case card, cash
 }
