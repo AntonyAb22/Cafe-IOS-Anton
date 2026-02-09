@@ -8,6 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		3A1A75FB2EDAF0EA0011F378 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1A75FA2EDAF0EA0011F378 /* SnapKit */; };
+		6918E2962F3884FC006347A0 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2952F3884F5006347A0 /* SupportViewController.swift */; };
+		6918E2982F388508006347A0 /* SupportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2972F3884FF006347A0 /* SupportInteractor.swift */; };
+		6918E29A2F38850F006347A0 /* SupportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2992F38850B006347A0 /* SupportPresenter.swift */; };
+		6918E29C2F388516006347A0 /* SupportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E29B2F388512006347A0 /* SupportRouter.swift */; };
+		6918E2A12F38852B006347A0 /* OrdersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2A02F38852B006347A0 /* OrdersRouter.swift */; };
+		6918E2A22F38852B006347A0 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E29D2F38852B006347A0 /* OrdersViewController.swift */; };
+		6918E2A32F38852B006347A0 /* OrdersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E29F2F38852B006347A0 /* OrdersPresenter.swift */; };
+		6918E2A42F38852B006347A0 /* OrdersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E29E2F38852B006347A0 /* OrdersInteractor.swift */; };
+		6918E2A92F38855B006347A0 /* PrivacyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2A82F38855B006347A0 /* PrivacyRouter.swift */; };
+		6918E2AA2F38855B006347A0 /* PrivacyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2A72F38855B006347A0 /* PrivacyPresenter.swift */; };
+		6918E2AB2F38855B006347A0 /* PrivacyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2A62F38855B006347A0 /* PrivacyInteractor.swift */; };
+		6918E2AC2F38855B006347A0 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2A52F38855B006347A0 /* PrivacyViewController.swift */; };
+		6918E2B12F388592006347A0 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2AE2F388592006347A0 /* SettingsInteractor.swift */; };
+		6918E2B22F388592006347A0 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2AF2F388592006347A0 /* SettingsPresenter.swift */; };
+		6918E2B32F388592006347A0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2AD2F388592006347A0 /* SettingsViewController.swift */; };
+		6918E2B42F388592006347A0 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2B02F388592006347A0 /* SettingsRouter.swift */; };
+		691CEF112F2DEEDF00B17E1B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CEF0D2F2DEEDF00B17E1B /* ProfileViewController.swift */; };
+		691CEF122F2DEEDF00B17E1B /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CEF0E2F2DEEDF00B17E1B /* ProfileInteractor.swift */; };
+		691CEF132F2DEEDF00B17E1B /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CEF0F2F2DEEDF00B17E1B /* ProfilePresenter.swift */; };
+		691CEF142F2DEEDF00B17E1B /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CEF102F2DEEDF00B17E1B /* ProfileRouter.swift */; };
 		693ABD892EE1DFAA00DEBBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABD792EE1DB9600DEBBEE /* AppDelegate.swift */; };
 		693ABD8A2EE1DFAF00DEBBEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABD7A2EE1DB9A00DEBBEE /* SceneDelegate.swift */; };
 		693ABD8B2EE1DFB900DEBBEE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABD822EE1DC5A00DEBBEE /* AuthViewController.swift */; };
@@ -56,6 +76,7 @@
 		693ABDF22EEEB14500DEBBEE /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEF2EEEB14500DEBBEE /* MenuRouter.swift */; };
 		693ABDF32EEEB14500DEBBEE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693ABDEC2EEEB14500DEBBEE /* MenuViewController.swift */; };
 		694A832C2F139237002CE2CD /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A832B2F139224002CE2CD /* HTTPRequestManager.swift */; };
+		697A39D92F2DF1CE00C00BD0 /* ValidatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697A39D82F2DF1AC00C00BD0 /* ValidatedTextField.swift */; };
 		69B004ED2F1B7BC3008C0B09 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004EC2F1B7BC2008C0B09 /* NetworkService.swift */; };
 		69B004EF2F1CD1C4008C0B09 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004EE2F1CD1BF008C0B09 /* AuthToken.swift */; };
 		69B004F32F1CD867008C0B09 /* AuthEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004F22F1CD861008C0B09 /* AuthEndPoint.swift */; };
@@ -80,6 +101,26 @@
 
 /* Begin PBXFileReference section */
 		3A1A75E12EDAF0590011F378 /* Cafe-iOS-Anton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cafe-iOS-Anton.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6918E2952F3884F5006347A0 /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		6918E2972F3884FF006347A0 /* SupportInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportInteractor.swift; sourceTree = "<group>"; };
+		6918E2992F38850B006347A0 /* SupportPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportPresenter.swift; sourceTree = "<group>"; };
+		6918E29B2F388512006347A0 /* SupportRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportRouter.swift; sourceTree = "<group>"; };
+		6918E29D2F38852B006347A0 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		6918E29E2F38852B006347A0 /* OrdersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersInteractor.swift; sourceTree = "<group>"; };
+		6918E29F2F38852B006347A0 /* OrdersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersPresenter.swift; sourceTree = "<group>"; };
+		6918E2A02F38852B006347A0 /* OrdersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersRouter.swift; sourceTree = "<group>"; };
+		6918E2A52F38855B006347A0 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		6918E2A62F38855B006347A0 /* PrivacyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyInteractor.swift; sourceTree = "<group>"; };
+		6918E2A72F38855B006347A0 /* PrivacyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPresenter.swift; sourceTree = "<group>"; };
+		6918E2A82F38855B006347A0 /* PrivacyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyRouter.swift; sourceTree = "<group>"; };
+		6918E2AD2F388592006347A0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6918E2AE2F388592006347A0 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		6918E2AF2F388592006347A0 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		6918E2B02F388592006347A0 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		691CEF0D2F2DEEDF00B17E1B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		691CEF0E2F2DEEDF00B17E1B /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		691CEF0F2F2DEEDF00B17E1B /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		691CEF102F2DEEDF00B17E1B /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		693ABD792EE1DB9600DEBBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		693ABD7A2EE1DB9A00DEBBEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		693ABD7F2EE1DC5A00DEBBEE /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
@@ -129,6 +170,7 @@
 		693ABDEE2EEEB14500DEBBEE /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		693ABDEF2EEEB14500DEBBEE /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
 		694A832B2F139224002CE2CD /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		697A39D82F2DF1AC00C00BD0 /* ValidatedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatedTextField.swift; sourceTree = "<group>"; };
 		69B004EC2F1B7BC2008C0B09 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		69B004EE2F1CD1BF008C0B09 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
 		69B004F22F1CD861008C0B09 /* AuthEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndPoint.swift; sourceTree = "<group>"; };
@@ -268,6 +310,7 @@
 		693ABD882EE1DDC300DEBBEE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				697A39D82F2DF1AC00C00BD0 /* ValidatedTextField.swift */,
 				693ABDC32EE5837800DEBBEE /* UIColor.swift */,
 				693ABDB12EE4156100DEBBEE /* TableViewItem.swift */,
 				693ABDAF2EE4155400DEBBEE /* TableViewModel.swift */,
@@ -383,6 +426,10 @@
 		69B0050C2F26106B008C0B09 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				691CEF0D2F2DEEDF00B17E1B /* ProfileViewController.swift */,
+				691CEF0E2F2DEEDF00B17E1B /* ProfileInteractor.swift */,
+				691CEF0F2F2DEEDF00B17E1B /* ProfilePresenter.swift */,
+				691CEF102F2DEEDF00B17E1B /* ProfileRouter.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -390,6 +437,10 @@
 		69B0050D2F261081008C0B09 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				6918E2AD2F388592006347A0 /* SettingsViewController.swift */,
+				6918E2AE2F388592006347A0 /* SettingsInteractor.swift */,
+				6918E2AF2F388592006347A0 /* SettingsPresenter.swift */,
+				6918E2B02F388592006347A0 /* SettingsRouter.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -397,6 +448,10 @@
 		69B0050E2F261091008C0B09 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				6918E2952F3884F5006347A0 /* SupportViewController.swift */,
+				6918E2972F3884FF006347A0 /* SupportInteractor.swift */,
+				6918E2992F38850B006347A0 /* SupportPresenter.swift */,
+				6918E29B2F388512006347A0 /* SupportRouter.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -404,6 +459,10 @@
 		69B0050F2F2610A1008C0B09 /* PrivacyPolicy&UserAgreement */ = {
 			isa = PBXGroup;
 			children = (
+				6918E2A52F38855B006347A0 /* PrivacyViewController.swift */,
+				6918E2A62F38855B006347A0 /* PrivacyInteractor.swift */,
+				6918E2A72F38855B006347A0 /* PrivacyPresenter.swift */,
+				6918E2A82F38855B006347A0 /* PrivacyRouter.swift */,
 			);
 			path = "PrivacyPolicy&UserAgreement";
 			sourceTree = "<group>";
@@ -411,6 +470,10 @@
 		69B005102F261137008C0B09 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				6918E29D2F38852B006347A0 /* OrdersViewController.swift */,
+				6918E29E2F38852B006347A0 /* OrdersInteractor.swift */,
+				6918E29F2F38852B006347A0 /* OrdersPresenter.swift */,
+				6918E2A02F38852B006347A0 /* OrdersRouter.swift */,
 			);
 			path = Orders;
 			sourceTree = "<group>";
@@ -526,7 +589,7 @@
 				};
 			};
 			buildConfigurationList = 3A1A75DC2EDAF0590011F378 /* Build configuration list for PBXProject "Cafe-iOS-Anton" */;
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -574,8 +637,17 @@
 				693ABDAC2EE413C200DEBBEE /* TablePresenter.swift in Sources */,
 				693ABD9E2EE4101900DEBBEE /* MorePresenter.swift in Sources */,
 				693ABD8D2EE1DFC100DEBBEE /* AuthPresenter.swift in Sources */,
+				6918E2A92F38855B006347A0 /* PrivacyRouter.swift in Sources */,
+				6918E2AA2F38855B006347A0 /* PrivacyPresenter.swift in Sources */,
+				6918E2AB2F38855B006347A0 /* PrivacyInteractor.swift in Sources */,
+				6918E2AC2F38855B006347A0 /* PrivacyViewController.swift in Sources */,
 				693ABDD72EED5E0D00DEBBEE /* CustomTabBarController.swift in Sources */,
+				6918E2A12F38852B006347A0 /* OrdersRouter.swift in Sources */,
+				6918E2A22F38852B006347A0 /* OrdersViewController.swift in Sources */,
+				6918E2A32F38852B006347A0 /* OrdersPresenter.swift in Sources */,
+				6918E2A42F38852B006347A0 /* OrdersInteractor.swift in Sources */,
 				69DB2ACE2EFFCA54003E00FB /* KeyChain.swift in Sources */,
+				6918E2962F3884FC006347A0 /* SupportViewController.swift in Sources */,
 				693ABDC02EE41D0700DEBBEE /* ForgotPresenter.swift in Sources */,
 				69B004ED2F1B7BC3008C0B09 /* NetworkService.swift in Sources */,
 				693ABDD02EED4B8000DEBBEE /* RegistrationPresenter.swift in Sources */,
@@ -606,12 +678,24 @@
 				693ABDD52EED5D8900DEBBEE /* RootRouter.swift in Sources */,
 				693ABDA82EE4104D00DEBBEE /* MainPresenter.swift in Sources */,
 				69DB2AD22EFFCADD003E00FB /* URLRequest+cURL.swift in Sources */,
+				697A39D92F2DF1CE00C00BD0 /* ValidatedTextField.swift in Sources */,
+				6918E29C2F388516006347A0 /* SupportRouter.swift in Sources */,
 				693ABD8C2EE1DFBC00DEBBEE /* AuthInteractor.swift in Sources */,
 				693ABD9C2EE4100F00DEBBEE /* MoreInteractor.swift in Sources */,
 				69DB2AD72EFFCC28003E00FB /* Log.swift in Sources */,
+				6918E2B12F388592006347A0 /* SettingsInteractor.swift in Sources */,
+				6918E2B22F388592006347A0 /* SettingsPresenter.swift in Sources */,
+				6918E2B32F388592006347A0 /* SettingsViewController.swift in Sources */,
+				6918E2B42F388592006347A0 /* SettingsRouter.swift in Sources */,
 				693ABDB02EE4155900DEBBEE /* TableViewModel.swift in Sources */,
 				693ABD892EE1DFAA00DEBBEE /* AppDelegate.swift in Sources */,
 				693ABD8B2EE1DFB900DEBBEE /* AuthViewController.swift in Sources */,
+				6918E29A2F38850F006347A0 /* SupportPresenter.swift in Sources */,
+				691CEF112F2DEEDF00B17E1B /* ProfileViewController.swift in Sources */,
+				691CEF122F2DEEDF00B17E1B /* ProfileInteractor.swift in Sources */,
+				6918E2982F388508006347A0 /* SupportInteractor.swift in Sources */,
+				691CEF132F2DEEDF00B17E1B /* ProfilePresenter.swift in Sources */,
+				691CEF142F2DEEDF00B17E1B /* ProfileRouter.swift in Sources */,
 				693ABDE82EEEB14300DEBBEE /* ChatsPresenter.swift in Sources */,
 				69DB2AE52EFFDC61003E00FB /* MultipartRequestBody.swift in Sources */,
 				693ABDE92EEEB14300DEBBEE /* ChatsInteractor.swift in Sources */,

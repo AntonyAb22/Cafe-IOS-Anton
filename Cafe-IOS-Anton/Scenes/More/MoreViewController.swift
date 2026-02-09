@@ -26,6 +26,7 @@ class MoreViewController: TableView  {
     
     private func setupUI() {
         view.backgroundColor = UIColor(red: 231/255.0, green: 235/255.0, blue: 241/255.0, alpha: 1.0)
+        navigationItem.backButtonTitle = ""
         
         titleSectionsLabel.tap {
             view.addSubview($0)
@@ -93,16 +94,21 @@ class MoreViewController: TableView  {
             }
         }
 
-//        logoutButton.tap {
-//            view.addSubview($0)
-//            $0.addTarget(self, action: #selector(logoutButtonTapped), for: .touchUpInside)
-//            $0.setImage(Shark.I.profile, for: .normal)
-//            $0.snp.makeConstraints {
-//                $0.top.equalTo(titleSectionsLabel.snp.bottom).offset(12)
-//                $0.leading.equalToSuperview().offset(16)
-//                
-//            }
-//        }
+        logoutButton.tap {
+            view.addSubview($0)
+            $0.addTarget(self, action: #selector(logoutButtonTapped), for: .touchUpInside)
+            $0.setTitle("Выйти из системы", for: .normal)
+            $0.titleLabel?.font = UIFont(name: "SF Pro Display", size: 15)
+            $0.backgroundColor = .systemBlue
+            $0.layer.cornerRadius = 10.0
+            $0.setTitleColor(.white, for: .normal)
+            $0.snp.makeConstraints {
+                $0.leading.equalToSuperview().offset(16)
+                $0.height.equalTo(50)
+                $0.trailing.equalToSuperview().inset(16)
+                $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(20)
+            }
+        }
     }
 }
 
@@ -137,23 +143,23 @@ extension MoreViewController {
         button.contentHorizontalAlignment = .leading
     }
     @objc func profileButtonTapped() {
-        
+        presenter?.presentProfile()
     }
     
     @objc func myOrdersButtonTapped() {
-        
+        presenter?.presentMyOrders()
     }
     
     @objc func supportButtonTapped() {
-        
+        presenter?.presentSupport()
     }
     
     @objc func privacyAndAgreementButtonTapped() {
-        
+        presenter?.presentPrivacy()
     }
     
     @objc func settingsButtonTapped() {
-        
+        presenter?.presentSettings()
     }
     
     @objc func logoutButtonTapped() {

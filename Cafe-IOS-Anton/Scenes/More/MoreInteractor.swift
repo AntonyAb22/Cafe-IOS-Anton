@@ -13,11 +13,5 @@ protocol MoreInteractorProtocol {
 }
 
 class MoreInteractor: MoreInteractorProtocol {
-    var presenter: MorePresenterProtocol
-    var router: MoreRouterProtocol
-    
-    init(presenter: MorePresenterProtocol, router: MoreRouterProtocol) {
-        self.presenter = presenter
-        self.router = router
-    }
+   
 }
