@@ -33,6 +33,7 @@ public enum Shark {
         public static var blueGreyLighten3: UIColor { return UIColor(named: "blueGreyLighten3", in: bundle, compatibleWith: nil)! }
         public static var customError: UIColor { return UIColor(named: "customError", in: bundle, compatibleWith: nil)! }
         public static var greyLighten5: UIColor { return UIColor(named: "greyLighten5", in: bundle, compatibleWith: nil)! }
+        public static var lightBlueDarken4: UIColor { return UIColor(named: "lightBlueDarken4", in: bundle, compatibleWith: nil)! }
     }
 
     public enum S {

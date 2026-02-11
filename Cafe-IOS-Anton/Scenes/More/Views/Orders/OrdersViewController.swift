@@ -10,9 +10,11 @@ import UIKit
 class OrdersViewController: TableView  {
     
     private let ordersTitleLabel = UILabel()
-    private let segmentControl = UISegmentedControl(items: ["Актуальные", "Завершенные"])
+    private let segmentControl = UISegmentedControl(items: ["Завершенные", "Актуальные"])
     private let countLabel = UILabel() // колво завершенных закзазов
     private var totalOrdersCount: OrdersList?
+    
+    var presenter: OrdersPresenter?
     
     
     override func viewDidLoad() {
@@ -44,34 +46,47 @@ class OrdersViewController: TableView  {
             $0.snp.makeConstraints {
                 $0.top.equalTo(ordersTitleLabel.snp.bottom).offset(20)
                 $0.leading.equalToSuperview().offset(16)
-                $0.trailing.equalToSuperview().inset(16)
+                $0.trailing.equalToSuperview().offset(-16)
                 $0.height.equalTo(30)
             }
         }
         countLabel.tap {
             segmentControl.addSubview($0)
-//            $0.text = "\(totalOrdersCount?.total)"
-            $0.text = "2"
+            //            $0.text = "\(totalOrdersCount?.total)"
+            $0.text = "0"
             $0.font = .systemFont(ofSize: 12, weight: .semibold)
             $0.textAlignment = .center
             $0.textColor = .white
             $0.clipsToBounds = true
             $0.layer.cornerRadius = 10
             $0.layer.masksToBounds = true
-            if let secondSegment = segmentControl.subviews.second {
+            if let firstSegment = segmentControl.subviews.first {
                 $0.snp.makeConstraints {
-                    $0.trailing.equalTo(secondSegment.snp.leading).inset(10)
+                    $0.trailing.equalTo(firstSegment.snp.leading).offset(-10)
                     $0.height.equalTo(20)
                     $0.width.equalTo(34)
+                    $0.centerY.equalToSuperview()
                 }
             }
         }
+        segmentedControlValueChanged(segmentControl)
     }
 }
 
 extension OrdersViewController {
     @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
         let selectedSegmentIndex = sender.selectedSegmentIndex
+        countLabel.backgroundColor = (selectedSegmentIndex == 0) ? Shark.C.lightBlueDarken4 : UIColor(hex: "#78909C")
         
+        let defaultTextAtributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        let selectedTextAtributes = [NSAttributedString.Key.foregroundColor: UIColor.systemBlue]
+        sender.setTitleTextAttributes(defaultTextAtributes, for: .normal)
+        sender.setTitleTextAttributes(selectedTextAtributes, for: .selected)
+        
+        switch selectedSegmentIndex {
+        case 0: presenter?.showСompletedOrders()
+        case 1: presenter?.showActualOrders()
+        default: break
+        }
     }
 }

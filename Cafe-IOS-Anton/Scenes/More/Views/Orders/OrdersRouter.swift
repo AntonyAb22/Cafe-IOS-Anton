@@ -25,4 +25,12 @@ class OrdersRouter: OrdersRouterProtocol {
         let presenter = OrdersPresenter(input: view, interactor: interactor)
         return view
     }
+    
+    func showActualOrders() {
+        
+    }
+    
+    func showСompletedOrders() {
+        
+    }
 }

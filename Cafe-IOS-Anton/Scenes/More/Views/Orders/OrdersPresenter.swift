@@ -23,4 +23,12 @@ class OrdersPresenter: TablePresenter, OrdersPresenterProtocol {
         super.init()
         self.view = input
     }
+    
+    func showActualOrders() {
+        
+    }
+    
+    func showСompletedOrders() {
+        
+    }
 }
