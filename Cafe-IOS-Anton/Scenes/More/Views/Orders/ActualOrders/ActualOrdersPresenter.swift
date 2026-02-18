@@ -23,4 +23,8 @@ class ActualOrdersPresenter: TablePresenter, ActualOrdersPresenterProtocol {
         super.init()
         self.view = input
     }
+    
+    func selectItem(atIndex index: Int) {
+        
+    }
 }

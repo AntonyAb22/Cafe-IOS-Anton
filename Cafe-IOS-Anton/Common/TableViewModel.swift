@@ -10,14 +10,17 @@ import UIKit
 
 class TableViewModel {
     let objectId: String
+    // must be static
     let identifier: String
+    
     var height: CGFloat {
         return UITableView.automaticDimension
     }
     
-    
     init(objectId: String, identifier: String = UUID().uuidString) {
-        self.objectId = objectId
         self.identifier = identifier
+        self.objectId = objectId
     }
+    
+
 }

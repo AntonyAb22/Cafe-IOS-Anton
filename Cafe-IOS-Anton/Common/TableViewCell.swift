@@ -13,9 +13,38 @@ protocol CellHandlerDelegate: AnyObject {
 
 public typealias CellHandler = (CellAction, TableViewCell) -> Void
 
+
+
 public class TableViewCell: UITableViewCell {
     var model: TableViewModel?
     var handler: CellHandler?
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        setupCommonProperties()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        setupCommonProperties()
+    }
+    
+    private func setupCommonProperties() {
+        selectionStyle = .none
+    }
+    
+    func fill(_ tableViewModel: TableViewModel?) {
+    }
+    
+    func notify(actionIdentifier: String, data: Any? = nil) {
+        let action = CellAction(
+            cellIdentifier: model?.identifier ?? "",
+            identifier: actionIdentifier,
+            data: data)
+        handler?(action, self)
+    }
 }
 
 public class CellAction {

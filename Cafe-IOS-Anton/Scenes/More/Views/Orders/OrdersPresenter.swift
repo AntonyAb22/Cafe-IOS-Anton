@@ -15,20 +15,22 @@ protocol OrdersPresenterProtocol {
 class OrdersPresenter: TablePresenter, OrdersPresenterProtocol {
     var input: OrdersViewController
     private var interactor: OrdersInteractorProtocol
+    let router: OrdersRouter
     
-    init(input: OrdersViewController, interactor: OrdersInteractorProtocol) {
+    init(input: OrdersViewController, interactor: OrdersInteractorProtocol, router: OrdersRouter) {
         self.input = input
         self.interactor = interactor
+        self.router = router
         
         super.init()
         self.view = input
     }
     
     func showActualOrders() {
-        
+        router.showActualOrders()
     }
     
     func showСompletedOrders() {
-        
+        router.showСompletedOrders()
     }
 }

@@ -15,7 +15,7 @@ class OrdersViewController: TableView  {
     private var totalOrdersCount: OrdersList?
     
     var presenter: OrdersPresenter?
-    
+    var router: OrdersRouter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +74,24 @@ class OrdersViewController: TableView  {
 }
 
 extension OrdersViewController {
+    public func addContainerView(_ childViewController: UIViewController) {
+        
+        if let existingChild = children.first {
+                    existingChild.willMove(toParent: nil)
+                    existingChild.view.removeFromSuperview()
+                    existingChild.removeFromParent()
+                }
+                
+                addChild(childViewController)
+                view.addSubview(childViewController.view)
+        
+        childViewController.view.snp.makeConstraints {
+                $0.top.equalTo(segmentControl.snp.bottom).offset(8)
+                $0.leading.trailing.bottom.equalToSuperview()
+            }
+        childViewController.didMove(toParent: self)
+    }
+    
     @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
         let selectedSegmentIndex = sender.selectedSegmentIndex
         countLabel.backgroundColor = (selectedSegmentIndex == 0) ? Shark.C.lightBlueDarken4 : UIColor(hex: "#78909C")

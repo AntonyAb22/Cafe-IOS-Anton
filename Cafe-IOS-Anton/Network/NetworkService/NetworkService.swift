@@ -105,3 +105,10 @@ public extension NetworkService {
     }
 }
 
+
+extension Data: DataInstantiable {
+    
+    public init(with data: Data) throws {
+        self = data
+    }
+}

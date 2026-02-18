@@ -15,5 +15,16 @@ protocol CompletedOrdersInteractorProtocol {
 
 class CompletedOrdersInteractor: CompletedOrdersInteractorProtocol {
     
-   
+    let service = 
+    
+    func loadCompletedOrders() {
+        
+    }
+    
+    func currentLoad(completion: @escaping ([Order]?, Error?) -> Void) {
+        
+        service.getCurrentLoad { workLoads, error in
+            completion(workLoads, error)
+        }
+    }
 }

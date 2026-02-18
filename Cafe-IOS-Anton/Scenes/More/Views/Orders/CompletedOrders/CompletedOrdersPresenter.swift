@@ -15,6 +15,7 @@ protocol CompletedOrdersPresenterProtocol {
 class CompletedOrdersPresenter: TablePresenter, CompletedOrdersPresenterProtocol {
     var input: CompletedOrdersViewController
     private var interactor: CompletedOrdersInteractorProtocol
+    private var orders = [Order]()
     
     init(input: CompletedOrdersViewController, interactor: CompletedOrdersInteractorProtocol) {
         self.input = input
@@ -22,5 +23,20 @@ class CompletedOrdersPresenter: TablePresenter, CompletedOrdersPresenterProtocol
         
         super.init()
         self.view = input
+    }
+    
+    func loadCompletedOrders() {
+        
+    }
+    
+    func fillCompletedOrdersItem() {
+        DispatchQueue.main.async {
+            var completedOrdersViewModels = []
+            
+        }
+    }
+
+    func selectItem(atIndex index: Int) {
+        
     }
 }
