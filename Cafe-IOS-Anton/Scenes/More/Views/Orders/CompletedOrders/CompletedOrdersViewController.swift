@@ -17,6 +17,7 @@ class CompletedOrdersViewController: TableView  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.loadCompletedOrders()
         setupUI()
     }
     
@@ -62,7 +63,7 @@ class CompletedOrdersViewController: TableView  {
 extension CompletedOrdersViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        presenter?.items.count ?? 0 // 10 исправить на 0
+        presenter?.items.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

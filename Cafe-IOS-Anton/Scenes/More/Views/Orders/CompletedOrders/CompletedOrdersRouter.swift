@@ -22,8 +22,10 @@ class CompletedOrdersRouter: CompletedOrdersRouterProtocol {
     static func createModule() -> UIViewController {
         let view = CompletedOrdersViewController()
         let router = CompletedOrdersRouter(rootViewController: view)
-        let interactor = CompletedOrdersInteractor()
-        let presenter = CompletedOrdersPresenter(input: view, interactor: interactor)
+        let service = OrdersService()
+        let interactor = CompletedOrdersInteractor(service: service)
+        let presenter = CompletedOrdersPresenter(input: view, interactor: interactor, router: router)
+        view.presenter = presenter
         return view
     }
 }

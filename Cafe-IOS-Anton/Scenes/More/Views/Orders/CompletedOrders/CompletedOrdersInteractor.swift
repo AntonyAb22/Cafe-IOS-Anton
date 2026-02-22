@@ -10,21 +10,20 @@ import Foundation
 import UIKit
 
 protocol CompletedOrdersInteractorProtocol {
-    
+    func loadCompletedOrders(completion: @escaping ([Order]?, Error?) -> Void)
 }
 
 class CompletedOrdersInteractor: CompletedOrdersInteractorProtocol {
     
-    let service = 
+    let service: OrdersService
     
-    func loadCompletedOrders() {
-        
+    init(service: OrdersService) {
+        self.service = service
     }
     
-    func currentLoad(completion: @escaping ([Order]?, Error?) -> Void) {
-        
-        service.getCurrentLoad { workLoads, error in
-            completion(workLoads, error)
+    func loadCompletedOrders(completion: @escaping ([Order]?, Error?) -> Void) {
+        service.getOrder { orders, error in
+            completion(orders, error)
         }
     }
 }

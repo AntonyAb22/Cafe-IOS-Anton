@@ -23,7 +23,7 @@ class CompletedOrdersTableViewCell: TableViewCell {
         }
         timeLabel.text = model.time
         priceLabel.text = String(model.price)
-        cakeNameLabel.text = model.cakeName.joined(separator: ", ")
+        cakeNameLabel.text = model.cakeName
         deliveryDateLabel.text = DateHelper.formatDateString(model.deliveryDate)
         addressLabel.text = model.address
         idLabel.text = model.id
