@@ -43,4 +43,13 @@ extension AuthEndPoint: Endpoint {
         case .getRefreshToken: return nil
         }
     }
+    
+    var isRefreshEndpoint: Bool {
+        switch self {
+        case .getRefreshToken:
+            return true
+        default:
+            return false
+        }
+    }
 }

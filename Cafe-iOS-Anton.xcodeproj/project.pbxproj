@@ -281,6 +281,7 @@
 		693ABD7C2EE1DC2000DEBBEE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				69FC81952F4EE5F400AE3903 /* Auth */,
 				693ABDDB2EEEACBF00DEBBEE /* Cart */,
 				693ABDDA2EEEACB300DEBBEE /* Chats */,
 				693ABDD92EEEAA4300DEBBEE /* Menu */,
@@ -288,10 +289,6 @@
 				693ABD972EE40FAA00DEBBEE /* Main */,
 				693ABD7D2EE1DC3200DEBBEE /* Forgot password */,
 				693ABD7E2EE1DC4100DEBBEE /* Registration */,
-				693ABD822EE1DC5A00DEBBEE /* AuthViewController.swift */,
-				693ABD7F2EE1DC5A00DEBBEE /* AuthInteractor.swift */,
-				693ABD802EE1DC5A00DEBBEE /* AuthPresenter.swift */,
-				693ABD812EE1DC5A00DEBBEE /* AuthRouter.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -602,6 +599,17 @@
 				69DB2AEA2EFFDCF5003E00FB /* MultipartRequestPartFile.swift */,
 			);
 			path = Parts;
+			sourceTree = "<group>";
+		};
+		69FC81952F4EE5F400AE3903 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				693ABD822EE1DC5A00DEBBEE /* AuthViewController.swift */,
+				693ABD7F2EE1DC5A00DEBBEE /* AuthInteractor.swift */,
+				693ABD802EE1DC5A00DEBBEE /* AuthPresenter.swift */,
+				693ABD812EE1DC5A00DEBBEE /* AuthRouter.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

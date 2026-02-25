@@ -24,18 +24,18 @@ protocol AuthInteractorProtocol {
 
 class AuthInteractor: AuthInteractorProtocol {
     
-    //let authService: AuthServiceProtocol
-    //let authService2 = AuthService2()
     let presenter: AuthPresenterProtocol
     let router: AuthRouterProtocol
     var model: AuthInteractorModel = .initial
     
+    let authService: AuthServiceProtocol
+    
     init(
-//        authService: AuthServiceProtocol,
+        authService: AuthServiceProtocol,
         presenter: AuthPresenterProtocol,
         router: AuthRouterProtocol,
     ) {
-        //self.authService = authService
+        self.authService = authService
         self.presenter = presenter
         self.router = router
     }
@@ -43,16 +43,28 @@ class AuthInteractor: AuthInteractorProtocol {
     
     func login() {
         print(#function)
-        // проверка кредов
-        self.router.navigateToHome(
-            with: .init(
-                id: "какой-то id",
-                userName: "какое-то имя пользователя",
-                email: "какой-то имейл",
-                phoneNumber: "+7905",
-                password: "1234"
-            )
-        )
+        authService.login(login: model.login, password: model.password) { token, error in
+            if let token = token {
+                token.saveToKeychain()
+                print("Debug:// запрос прошел успешно")
+                
+                // проверка кредов
+                self.router.navigateToHome(
+                    with: .init(
+                        id: "какой-то id",
+                        userName: "какое-то имя пользователя",
+                        email: "какой-то имейл",
+                        phoneNumber: "+7905",
+                        password: "1234"
+                    )
+                )
+            } else {
+                DispatchQueue.main.async {
+                    self.presenter.presentError()
+                }
+            }
+            
+        }
     }
     
     func passwordDidtap(text: String) {

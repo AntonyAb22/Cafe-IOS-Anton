@@ -95,16 +95,16 @@ class RootRouter {
     }
     
     private func showLogin() {
+        let authService = AuthService()
         let authViewController = AuthViewController()
         let navController = UINavigationController(rootViewController: authViewController)
         let authPresenter = AuthPresenter(viewController: authViewController)
         let authRouter = AuthRouter(viewController: navController)
-        let authInteractor = AuthInteractor(presenter: authPresenter, router: authRouter) // не хватает сервиса
+        let authInteractor = AuthInteractor(authService: authService, presenter: authPresenter, router: authRouter)
         authViewController.interactor = authInteractor
         authViewController.router = authRouter
         navController.modalPresentationStyle = .fullScreen
         tabBarController.present(navController, animated: false) // неверная логика 
-        
     }
 }
 

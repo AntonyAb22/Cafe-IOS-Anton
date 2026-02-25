@@ -37,12 +37,12 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         
         view.backgroundColor = UIColor(red: 231/255.0, green: 235/255.0, blue: 241/255.0, alpha: 1.0)
         
-        loginTF.text = "a66110222@gmail.com" // a66110222@gmail.com
-        passwordTF.text = "Anton2004" // Anton2004
+        loginTF.text = "a.anton@gmail.com" // a.anton@gmail.com
+        passwordTF.text = "secret" // secret
         loginTF.delegate = self
         passwordTF.delegate = self
-        //interactor?.loginDidtap(text: loginTF.text ?? "")
-        //interactor?.passwordDidtap(text: passwordTF.text ?? "")
+        interactor?.loginDidtap(text: loginTF.text ?? "")
+        interactor?.passwordDidtap(text: passwordTF.text ?? "")
         
         logoImageView.tap {
             view.addSubview($0)
@@ -221,7 +221,7 @@ extension AuthViewController {
     }
     
     @objc func loginTextFiledDidTapped(_ textField: UITextField){
-        //  interactor?.loginDidtap(text: textField.text ?? "")
+        interactor?.loginDidtap(text: textField.text ?? "")
         resetAoutorizationError()
     }
     
@@ -233,7 +233,7 @@ extension AuthViewController {
     }
     
     @objc func passwordTextFiledDidTapped(_ textField: UITextField){
-        //  interactor?.passwordDidtap(text: textField.text ?? "")
+        interactor?.passwordDidtap(text: textField.text ?? "")
         resetAoutorizationError()
     }
     
@@ -242,6 +242,8 @@ extension AuthViewController {
     }
     
     @objc func loginButtonTapped() {
+        interactor?.loginDidtap(text: loginTF.text ?? "")
+        interactor?.passwordDidtap(text: passwordTF.text ?? "")
         interactor?.login()
     }
     

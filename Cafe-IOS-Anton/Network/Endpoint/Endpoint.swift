@@ -24,18 +24,15 @@ public protocol  Endpoint: URLConvertible {
     var body: EndpointBody? { get }
     var multipartsRequestPartType: [MultipartRequestPartType]? { get }
     var timeout: TimeInterval { get }
+    var isVerificationEndpoint: Bool { get }
+    var isRefreshEndpoint: Bool { get }
 }
 
 public extension Endpoint {
     var timeout: TimeInterval { RequestTimeout.standart.rawValue }
     var useDefaultHeaders: Bool { false }
     var headers: [String: String]? {
-        var header = ["Content-Type": "application/json"]
-        if let token = UserDefaults.standard.string(forKey: "token") {
-            header["Authorization"] = "Bearer " + token
-            print("Debug: Authorization header set with token: \(token)")
-        }
-        return header
+        ["Content-Type": "application/json"]
     }
     
     var queryItems: [String: Any]? {
@@ -63,6 +60,14 @@ public extension Endpoint {
     
     var subPath: String {
         "v2"
+    }
+    
+    var isVerificationEndpoint: Bool {
+        false
+    }
+    
+    var isRefreshEndpoint: Bool {
+        false
     }
 }
 

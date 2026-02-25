@@ -8,7 +8,7 @@
 import Foundation
 
 protocol AuthServiceProtocol {
-    
+    func login(login: String, password: String, completion: @escaping (Tokens?, Error?) -> Void)
 }
 
 class AuthService: NetworkService<AuthEndPoint>, AuthServiceProtocol {
@@ -111,9 +111,20 @@ class AuthService: NetworkService<AuthEndPoint>, AuthServiceProtocol {
             completion(true)
             return
         }
-        getRefreshToken { (token, error) in
-            completion(true) // ????
+        
+        guard !isRefreshTokenExpired() else {
+            completion(false)
+            return
         }
-        completion(false)
+        
+        getRefreshToken { token, _ in
+            guard let token = token else {
+                completion(false)
+                return
+            }
+            
+            token.saveToKeychain()
+            completion(true)
+        }
     }
 }

@@ -8,6 +8,11 @@
 struct OrdersList: Codable {
     let list: [Order]
     let total: Int  //  коли - во заказов
+    
+    enum CodingKeys: String, CodingKey {
+        case list = "orders"
+        case total
+    }
 }
 
 struct Order: Codable {
