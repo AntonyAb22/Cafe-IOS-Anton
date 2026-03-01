@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		690106EC2F54361300F57DB5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 690106EB2F54361300F57DB5 /* SnapKit */; };
 		690106EF2F54362900F57DB5 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 690106EE2F54362900F57DB5 /* GRDB */; };
+		690106F12F543EEE00F57DB5 /* CakeImageMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690106F02F543EED00F57DB5 /* CakeImageMapper.swift */; };
 		6918E2962F3884FC006347A0 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2952F3884F5006347A0 /* SupportViewController.swift */; };
 		6918E2982F388508006347A0 /* SupportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2972F3884FF006347A0 /* SupportInteractor.swift */; };
 		6918E29A2F38850F006347A0 /* SupportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2992F38850B006347A0 /* SupportPresenter.swift */; };
@@ -114,6 +115,7 @@
 
 /* Begin PBXFileReference section */
 		3A1A75E12EDAF0590011F378 /* Cafe-iOS-Anton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cafe-iOS-Anton.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		690106F02F543EED00F57DB5 /* CakeImageMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeImageMapper.swift; sourceTree = "<group>"; };
 		6918E2952F3884F5006347A0 /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 		6918E2972F3884FF006347A0 /* SupportInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportInteractor.swift; sourceTree = "<group>"; };
 		6918E2992F38850B006347A0 /* SupportPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportPresenter.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 		693ABD882EE1DDC300DEBBEE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				690106F02F543EED00F57DB5 /* CakeImageMapper.swift */,
 				697D7A232F41C22200B4BB75 /* DateHelper.swift */,
 				697A39D82F2DF1AC00C00BD0 /* ValidatedTextField.swift */,
 				693ABDC32EE5837800DEBBEE /* UIColor.swift */,
@@ -788,6 +791,7 @@
 				693ABDBE2EE41D0000DEBBEE /* ForgotInteractor.swift in Sources */,
 				693ABD912EE1DFD100DEBBEE /* Tap.swift in Sources */,
 				69B005062F24BAA0008C0B09 /* Order.swift in Sources */,
+				690106F12F543EEE00F57DB5 /* CakeImageMapper.swift in Sources */,
 				69B004EF2F1CD1C4008C0B09 /* AuthToken.swift in Sources */,
 				693ABD922EE1DFD500DEBBEE /* Shark.swift in Sources */,
 				69C949672F4AFD05001931DA /* Tokens.swift in Sources */,

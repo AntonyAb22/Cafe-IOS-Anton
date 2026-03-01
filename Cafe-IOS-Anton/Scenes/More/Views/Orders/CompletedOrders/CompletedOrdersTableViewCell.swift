@@ -16,17 +16,20 @@ class CompletedOrdersTableViewCell: TableViewCell {
     private let addressLabel = UILabel()// адрес доставки
     private let idLabel = UILabel()// адрес доставки
     
+    private let cakeImageView = UIImageView() // иконки тортов
+    
     override func fill(_ tableViewModel: TableViewModel?) {
         guard let model = tableViewModel as? OrderViewModel else {
             print("Model not found")
             return
         }
         timeLabel.text = model.time
-        priceLabel.text = String(model.price)
+        priceLabel.text = "Общая стоимость заказа: \(model.price) ₽"
         cakeNameLabel.text = model.cakeName
         deliveryDateLabel.text = DateHelper.formatDateString(model.deliveryDate)
         addressLabel.text = model.address
         idLabel.text = model.id
+        cakeImageView.image = CakeImageMapper.image(for: model.cakeName) // set images on naming cakes
     }
     
     override init(style: CompletedOrdersTableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -39,17 +42,37 @@ class CompletedOrdersTableViewCell: TableViewCell {
     }
     
     func setupUI() {
+        
         cakeNameLabel.tap {
             contentView.addSubview($0)
             $0.font = UIFont.boldSystemFont(ofSize: 16)
             $0.textColor = UIColor(hex: "#0D47A1")
-            $0.text = "cake name"
             $0.snp.makeConstraints {
                 $0.top.equalToSuperview().offset(6)
                 $0.leading.equalToSuperview().offset(16)
             }
         }
+        
+        cakeImageView.tap {
+            contentView.addSubview($0)
+            $0.contentMode = .scaleAspectFill
+            $0.clipsToBounds = true
+            $0.layer.cornerRadius = 8
+            $0.snp.makeConstraints {
+                $0.top.equalTo(cakeNameLabel.snp.bottom).offset(10)
+                $0.leading.equalToSuperview().offset(16)
+                $0.size.equalTo(80)
+            }
+        }
+        
+        priceLabel.tap {
+            contentView.addSubview($0)
+            $0.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
+            $0.textColor = .black
+            $0.snp.makeConstraints {
+                $0.top.equalTo(cakeImageView.snp.bottom).offset(6)
+                $0.leading.equalToSuperview().offset(16)
+            }
+        }
     }
 }
-
-
