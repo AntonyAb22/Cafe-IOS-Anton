@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A1A75FB2EDAF0EA0011F378 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1A75FA2EDAF0EA0011F378 /* SnapKit */; };
+		690106EC2F54361300F57DB5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 690106EB2F54361300F57DB5 /* SnapKit */; };
+		690106EF2F54362900F57DB5 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 690106EE2F54362900F57DB5 /* GRDB */; };
 		6918E2962F3884FC006347A0 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2952F3884F5006347A0 /* SupportViewController.swift */; };
 		6918E2982F388508006347A0 /* SupportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2972F3884FF006347A0 /* SupportInteractor.swift */; };
 		6918E29A2F38850F006347A0 /* SupportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918E2992F38850B006347A0 /* SupportPresenter.swift */; };
@@ -93,7 +94,6 @@
 		69B004EF2F1CD1C4008C0B09 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004EE2F1CD1BF008C0B09 /* AuthToken.swift */; };
 		69B004F32F1CD867008C0B09 /* AuthEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004F22F1CD861008C0B09 /* AuthEndPoint.swift */; };
 		69B004F62F1CE368008C0B09 /* GRDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B004F52F1CE364008C0B09 /* GRDB.swift */; };
-		69B004FE2F1CE59B008C0B09 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 69B004FD2F1CE59B008C0B09 /* GRDB */; };
 		69B005042F24AF1E008C0B09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B005032F24AF1A008C0B09 /* User.swift */; };
 		69B005062F24BAA0008C0B09 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B005052F24BA8F008C0B09 /* Order.swift */; };
 		69C949672F4AFD05001931DA /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C949662F4AFCFF001931DA /* Tokens.swift */; };
@@ -223,8 +223,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A1A75FB2EDAF0EA0011F378 /* SnapKit in Frameworks */,
-				69B004FE2F1CE59B008C0B09 /* GRDB in Frameworks */,
+				690106EC2F54361300F57DB5 /* SnapKit in Frameworks */,
+				690106EF2F54362900F57DB5 /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,8 +629,8 @@
 			);
 			name = "Cafe-iOS-Anton";
 			packageProductDependencies = (
-				3A1A75FA2EDAF0EA0011F378 /* SnapKit */,
-				69B004FD2F1CE59B008C0B09 /* GRDB */,
+				690106EB2F54361300F57DB5 /* SnapKit */,
+				690106EE2F54362900F57DB5 /* GRDB */,
 			);
 			productName = "Cafe-iOS-Anton";
 			productReference = 3A1A75E12EDAF0590011F378 /* Cafe-iOS-Anton.app */;
@@ -662,8 +662,8 @@
 			mainGroup = 3A1A75D82EDAF0590011F378;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				3A1A75F92EDAF0EA0011F378 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				69B004FC2F1CE59B008C0B09 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+				690106EA2F54361300F57DB5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				690106ED2F54362900F57DB5 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3A1A75E22EDAF0590011F378 /* Products */;
@@ -1008,7 +1008,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3A1A75F92EDAF0EA0011F378 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		690106EA2F54361300F57DB5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -1016,7 +1016,7 @@
 				minimumVersion = 5.7.1;
 			};
 		};
-		69B004FC2F1CE59B008C0B09 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+		690106ED2F54362900F57DB5 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/groue/GRDB.swift.git";
 			requirement = {
@@ -1027,14 +1027,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3A1A75FA2EDAF0EA0011F378 /* SnapKit */ = {
+		690106EB2F54361300F57DB5 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3A1A75F92EDAF0EA0011F378 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 690106EA2F54361300F57DB5 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		69B004FD2F1CE59B008C0B09 /* GRDB */ = {
+		690106EE2F54362900F57DB5 /* GRDB */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 69B004FC2F1CE59B008C0B09 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			package = 690106ED2F54362900F57DB5 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
 			productName = GRDB;
 		};
 /* End XCSwiftPackageProductDependency section */

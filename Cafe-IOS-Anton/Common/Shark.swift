@@ -23,6 +23,43 @@ public enum Shark {
         public static var category: UIImage { return UIImage(named:"category", in: bundle, compatibleWith: nil)! }
         public static var profile: UIImage { return UIImage(named:"profile", in: bundle, compatibleWith: nil)! }
         public static var changePasswordButton: UIImage { return UIImage(named:"changePasswordButton", in: bundle, compatibleWith: nil)! }
+        
+        
+        public static var bananVKarameli: UIImage { return UIImage(named:"BananVKarameli", in: bundle, compatibleWith: nil)! }
+        public static var bananovyyToffi: UIImage { return UIImage(named:"BananovyyToffi", in: bundle, compatibleWith: nil)! }
+        public static var chizkeyk: UIImage { return UIImage(named:"Chizkeyk", in: bundle, compatibleWith: nil)! }
+        public static var ferreroRocher: UIImage { return UIImage(named:"FerreroRocher", in: bundle, compatibleWith: nil)! }
+        public static var fistashkaMalina: UIImage { return UIImage(named:"FistashkaMalina", in: bundle, compatibleWith: nil)! }
+        public static var fistashkaVishnya: UIImage { return UIImage(named:"FistashkaVishnya", in: bundle, compatibleWith: nil)! }
+        public static var fundukKaramel: UIImage { return UIImage(named:"FundukKaramel", in: bundle, compatibleWith: nil)! }
+        public static var golubichnyy: UIImage { return UIImage(named:"Golubichnyy", in: bundle, compatibleWith: nil)! }
+        public static var grushaMinal: UIImage { return UIImage(named:"GrushaMinal", in: bundle, compatibleWith: nil)! }
+        public static var klubnikaBanan: UIImage { return UIImage(named:"KlubnikaBanan", in: bundle, compatibleWith: nil)! }
+        public static var klubnikaShokolad: UIImage { return UIImage(named:"KlubnikaShokolad", in: bundle, compatibleWith: nil)! }
+        public static var kokosovyy: UIImage { return UIImage(named:"Kokosovyy", in: bundle, compatibleWith: nil)! }
+        public static var malinovyy: UIImage { return UIImage(named:"Malinovyy", in: bundle, compatibleWith: nil)! }
+        public static var malinovyyMilksheyk: UIImage { return UIImage(named:"MalinovyyMilksheyk", in: bundle, compatibleWith: nil)! }
+        public static var mangoMarakuya: UIImage { return UIImage(named:"MangoMarakuya", in: bundle, compatibleWith: nil)! }
+        public static var morkovnyySKaramelyu: UIImage { return UIImage(named:"MorkovnyySKaramelyu", in: bundle, compatibleWith: nil)! }
+        public static var mussovyyShokoladnyyBento: UIImage { return UIImage(named:"MussovyyShokoladnyyBento", in: bundle, compatibleWith: nil)! }
+        public static var mussovyyYagodnyyBento: UIImage { return UIImage(named:"MussovyyYagodnyyBento", in: bundle, compatibleWith: nil)! }
+        public static var persikMalina: UIImage { return UIImage(named:"PersikMalina", in: bundle, compatibleWith: nil)! }
+        public static var poleznyyMedovik: UIImage { return UIImage(named:"PoleznyyMedovik", in: bundle, compatibleWith: nil)! }
+        public static var praga: UIImage { return UIImage(named:"Praga", in: bundle, compatibleWith: nil)! }
+        public static var raffaello: UIImage { return UIImage(named:"Raffaello", in: bundle, compatibleWith: nil)! }
+        public static var snikersClassic: UIImage { return UIImage(named:"SnikersClassic", in: bundle, compatibleWith: nil)! }
+        public static var tiramisu: UIImage { return UIImage(named:"Tiramisu", in: bundle, compatibleWith: nil)! }
+        public static var triShokoladaMussovyy: UIImage { return UIImage(named:"TriShokoladaMussovyy", in: bundle, compatibleWith: nil)! }
+        public static var tropiki: UIImage { return UIImage(named:"Tropiki", in: bundle, compatibleWith: nil)! }
+        public static var tykvennyyLatte: UIImage { return UIImage(named:"TykvennyyLatte", in: bundle, compatibleWith: nil)! }
+        public static var vishnyaShokolad: UIImage { return UIImage(named:"VishnyaShokolad", in: bundle, compatibleWith: nil)! }
+        public static var vishnyaVShokolade: UIImage { return UIImage(named:"VishnyaVShokolade", in: bundle, compatibleWith: nil)! }
+        public static var yablokoKoritsa: UIImage { return UIImage(named:"YablokoKoritsa", in: bundle, compatibleWith: nil)! }
+        public static var yagodnyyBarhat: UIImage { return UIImage(named:"YagodnyyBarhat", in: bundle, compatibleWith: nil)! }
+        public static var golubikaVanil: UIImage { return UIImage(named:"golubikaVanil", in: bundle, compatibleWith: nil)! }
+        public static var klubnikaVShocolade: UIImage { return UIImage(named:"klubnikaVShocolade", in: bundle, compatibleWith: nil)! }
+        public static var medovik: UIImage { return UIImage(named:"medovik", in: bundle, compatibleWith: nil)! }
+        public static var snikers: UIImage { return UIImage(named:"snikers", in: bundle, compatibleWith: nil)! }
     }
 
     public enum C: CaseIterable {
